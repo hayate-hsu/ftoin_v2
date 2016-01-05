@@ -1,0 +1,30 @@
+### BEGIN FILE ###
+#
+# allow-all
+#
+#
+User-agent: Baiduspider
+Disallow: /action/
+Disallow: /admin/
+Disallow: /my/
+Disallow: /code/download_src
+Disallow: /widgets/
+
+User-agent: Googlebot
+Disallow: /action/
+Disallow: /admin/
+Disallow: /my/
+Disallow: /code/download_src
+Disallow: /widgets/
+
+User-agent: MSNBot
+Disallow: /action/
+Disallow: /admin/
+Disallow: /my/
+Disallow: /code/download_src
+Disallow: /widgets/
+
+User-agent: *
+Disallow: /
+
+### END FILE ###

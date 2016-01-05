@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="baidu-site-verification" content="8IgABMh3ki" />
+    <meta property="wb:webmaster" content="196ca99c76d3ffd2" />
+    <title>国家物联网标识管理公共服务平台—提供物联网统一入口、项目孵化—NIOT</title>
+    <meta name="keywords" content="物联网,国家物联网标识管理公共服务平台,物联网标识,物联网项目,物联网项目孵化">
+    <meta name="description" content="国家物联网标识管理公共服务平台，是由中国科学院计算机网络信息中心牵头，联合工业和信息化部电子科学技术情报研究所、工业和信息化部电信研究院、中国物品编码中心三家参与单位建立的物联网标识统一管理和公共服务平台。">
+    <!--<script type="text/javascript" src="/js/html5shiv.js"></script>-->
+    <link rel="stylesheet" href="/css/main.min.css" />
+</head>
+
+<body>
+    <!--页头-->
+	<%include file="include/header.html"/>
+
+    <!--banner-->
+	<%include file="include/banner.html"/>
+
+    <section class="layer01">
+        <div class="layer_wrapper">
+            <div class="mq_notice">
+                <div class="noticeTip"><a href="notices.html">通知公告</a>：</div>
+                <div class="mcNotice">
+                % for message in notices:
+                <p><a target="_blank" href="/newsdetail.html?id=${message['id']}" title="${message['title']}">${message['title']}</a></p>
+                % endfor
+                </div>
+            </div>
+    		<a name="bsss"></a>
+            <div class="layerbox">
+                <div class="bz_search">
+                    <h2>查询</h2>
+                    <ul class="bz_data"><li>历史查询<span id="bz_all">14080808</span></li><li><i></i></li><li>今日查询<span id="bz_today">1</span></li></ul>
+                    <div class="bz_sbox">
+                        <input type="text" placeholder="请输入需要查询的标识" onkeydown="EnterPress(event, this)" id="bzS"  />
+                        <button>查询</button>
+                    </div>
+                    <div class="bz_register">
+                    	<div>
+                            <h2>注册</h2>
+                            <span class="bz_reTip">国家级标识服务授权注册商招募中，联系：<span>400-806-0373</span></span>
+                        </div>
+                        <div class="bz_list">
+                        	<div class="tt_h4">选择注册商：</div>
+                            <div class="bzad"><a class="jmit" href="http://iot.jmars.com:9191/" target="_blank">捷玛计算机信息技术</a>
+                            <a href="http://iot.jmars.com:9191/" target="_blank" class="bz_btn">注册</a></div>
+                        </div>
+                        <div class="bz_info">
+                            <i></i>
+                            <p>捷玛公司是专注于商品流通、软件开发、解决方案提供、系统集成及IT服务的外商独资高科技企业。自2000年成立以来，为上海百联集团下属大型连锁零售、物流企业，为中集集团下属各类企业以及ZARA服装专卖等国内外知名企业相关的过千家商铺、供应商、仓库、物流配送中心进行了IT基础架构和集成、软件客制化开发、解决方案实施，全年365天24小时的IT服务。</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="float:left; overflow:hidden;">
+                    <div class="bz_help">
+                        <h2>帮助中心</h2>
+                        <p><a href="newsdetail.html?id=9398d28357a428d2f5a13261ef30aecd" target="_blank">1.国家物联网标识管理公共服务平台简介</a></p>
+                        <p><a href="newsdetail.html?id=e7bf5812ca9b9484eabe7e0ec62b7185" target="_blank">2.国家物联网标识管理公共服务平台管理办法</a></p>
+                        <p><a href="newsdetail.html?id=f1e080525bee67e1d39d4c173dc0285e" target="_blank">3.注册信息保护服务条款</a></p>
+                        <p><a href="newsdetail.html?id=b6e6f7a9be3912a6af96b2dc53fb3dbd" target="_blank">4.国家物联网标识管理公共服务平台服务条款</a></p>
+                    </div>
+                    <div class="bz_partner">
+                        <h2>合作商</h2>
+                        <div><img src="images/tp.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="layer02">
+        <div class="layer_wrapper">
+            <div class="showVideo">
+                <object id='splayer' width='640' height='326'>
+                    <param name='allowScriptAccess' value='opaque' />
+                    <embed src="http://player.youku.com/player.php/sid/XOTUwODAxNTI0/v.swf" rel="nofollow" allowFullScreen="false" quality="high" width="640" height="326" align="middle" allowScriptAccess="always" wmode="opaque" type="application/x-shockwave-flash"></embed>
+                </object>
+                <p>we are NIOT</p>
+                <div>NIOT团队秉承专注、快速、创造、感恩的价值体系，是中国物联网行业的前行者</div>
+            </div>            
+            <div class="bz_news">
+                <h2>标识资讯</h2>   
+                <a href="nameinfo.html">more+</a>
+                % for index, message in enumerate(ids):
+                    <p><a target="_blank" href="newsdetail.html?id=${message['id']}" title="${message['title']}">${message['title']}</a>
+                    <span>${message['ctime'].strftime('%Y-%m-%d')}</span></p>
+                    % if not index:
+                        <div><p>${message['subtitle']}</p><span class="subline"></span></div>
+                    % endif
+                % endfor
+            </div>
+        </div>
+    </section>
+
+    <section class="layer03">
+        <div class="layer_wrapper">
+            <div class="layer_header">
+                <h2>新闻资讯</h2>
+                <div class="tt_h4">News and Infomation</div>
+                <span></span>
+                <a href="news.html">more+</a>
+            </div>
+            <div class="fallbox">
+                <ul>
+                    % for index, message in enumerate(news):
+                        <li class="fb0${index+1}"><img id="img${index+1}" src="${cms}${message['image']}" /><a target="_blank" href="/newsdetail.html?id=${message['id']}"><span class="scTime">${message['ctime'].strftime('%Y-%m-%d')}</span><div><h3>${message['title']}</h3><p>${message['subtitle'][0:28]}</p></div></a></li>
+                    % endfor
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="layer04">
+        <div class="layer_wrapper">
+            <div class="layer_header">
+                <h2>应用</h2>
+                <div class="tt_h4">ACHIEVEMENTS OF SUPPLY AND DEMAND PLATFORM</div>
+                <span></span>
+            </div>
+            <div class="detial">
+                <a href="http://www.bidongwifi.com/" target="_blank"><img src="/images/bidong.jpg" alt="壁咚Wifi" width="398" height="294" style="float:left;" /></a>
+                <div class="note">
+                    <h3><a href="http://www.bidongwifi.com/" target="_blank">壁咚WiFi</a></h3>
+                    <p class="np01">壁咚WiFi是由国家物联网标识管理公共服务平台NIOT团队设计与开发,改善城中村网线繁多的解决方案。<!--<a href="http://www.bidongwifi.com/" target="_blank">详情>></a>--></p>
+                    <p class="np02">已融资：<i>￥</i><span>200,8000</span></p>
+                    <!--<p class="np03">此项目须在2015/04/18前，获得￥500000的支持才可成功！</p>-->
+                    <div class="progress">
+                        <div class="content">
+                            <div class="expand"></div>
+                            <span class="count">30%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <p>微信公众号<br /><span>bidongwifi</span></p>
+                    <p>咨询QQ<br /><span>157881423</span></p>
+                    <a href="http://www.bidongwifi.com/" target="_blank">了解详情</a>
+                </div>
+            </div>
+            <div class="detial">
+                <a href="http://www.saomashou.com/" target="_blank"><img src="/images/saoma.jpg" alt="扫码兽" width="398" height="294" style="float:left;" /></a>
+                <div class="note">
+                    <h3><a href="http://www.saomashou.com/" target="_blank">扫码兽</a></h3>
+                    <p class="np01">扫码兽是国家物联网标识管理公共服务平台权威认证的官方APP，一款扫码溯源软件。扫码涵括条形码、二维码、婴幼儿追溯码、农产品追溯码、药品监管码、快递码、美国跨境商品码等一概收纳，扫码皆能认证。</p>
+                    <p class="np02">商家入驻：<span>5600</span>家</p>
+                </div>
+                <div class="contact">
+                    <p>微信公众号<br /><span>saomashou</span></p>
+                    <p>客服电话<br /><span>020-39393309</span></p>
+                    <a href="http://www.saomashou.com/" target="_blank">了解详情</a>
+                </div>
+            </div>
+            <div class="detial">
+                <a href="http://www.mosign.cn/#/" target="_blank"><img src="/images/mosi.png" alt="魔饰" width="398" height="294" style="float:left;" /></a>
+                <div class="note">
+                    <h3><a href="http://www.mosign.cn/#/" target="_blank">魔饰</a></h3>
+                    <p class="np01">魔饰（mosign），是由国家物联网标识管理公共服务平台技术团队打造，以扶持中小企业发展为己任，致力为企业提供场景自营销服务支持的H5移动建站服务平台。</p>
+                </div>
+                <div class="contact">
+                    <p>微信公众号<br /><span>mosign-niot</span></p>
+                    <p>客服电话<br /><span>020-39393309</span></p>
+                    <a href="http://www.mosign.cn/#/" target="_blank">了解详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="layer05 corInfy">
+        <div class="layer_wrapper">
+            <div class="layer_header">
+                <h2>合作机构</h2>
+            </div>
+            <ul>
+                <li><a href="http://www.ancc.org.cn/" target="_blank" title="中国物品编码中心"><img src="/images/gykj_b.jpg" alt="中国物品编码中心" width="262" height="122" /></a></li>
+                <li><a href="http://www.etiri.com.cn/" target="_blank" title="工业和信息化部电子科技情报研究所"><img src="/images/nszf_b.jpg" alt="工业和信息化部电子科技情报研究所" width="262" height="122" /></a></li>
+                <li><a href="http://www.catr.cn/" target="_blank" title="中国信息通信研究院"><img src="/images/xkkj_b.jpg" alt="中国信息通信研究院" width="262" height="122" /></a></li>
+                <li style="margin-right: 0;"><a href="http://ftz.gzns.gov.cn/" target="_blank" title="广东自贸区南沙片区政府"><img src="/images/zgdx_b.jpg" alt="广东自贸区南沙片区政府" width="262" height="122" /></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--页尾-->
+	<%include file="include/footer.html"/>
+    
+    <!--页面右侧浮动公众号、客服电话、回顶部-->
+	<%include file="include/aside.html"/>
+
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/main.min.js"></script>
+    <script type="text/javascript" src="/js/scrollPath.min.js"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=57136132" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function(){
+            //通知公告滚动
+            var noticeMq = function(data){
+				$('.mcNotice p:eq(0)').clone().appendTo($('.mcNotice'));	//第一行复制到最后
+				var mqNoticeMt = 0;
+				var itvNotice = setInterval(function(){
+					mqNoticeMt += 1;
+					if(mqNoticeMt>5){ $('.mcNotice p:eq(0)').css("margin-top","0px"); mqNoticeMt = 1; }	//滚动到最后时瞬切回第一行
+					$('.mcNotice p:eq(0)').animate({"margin-top":(-50*mqNoticeMt)+"px"},800);
+				},4000);	//延迟时长
+			};noticeMq();
+
+            //新闻资讯交互效果
+            var callbackList = function(data){
+                $('.fallbox li img').each(function(i){
+                    var img = $(this);
+                    var realWidth;//真实的宽度
+                    var realHeight;//真实的高度
+                    var mw;//变化宽度
+                    var mh;//变化高度
+                    $("<img/>").attr("src", $(img).attr("src")).load(function() {
+                        realWidth = this.width;
+                        realHeight = this.height;
+
+                        if(i==4 || i==8){
+                            mh = Math.round(realHeight*572/realWidth);
+                            $(img).css({'margin-top': Math.round(-(mh/2))+'px', 'top':'50%', 'left':'0', 'width':'572px'});
+                        }else{
+                            mw = Math.round(realWidth*274/realHeight);
+                            $(img).css({'margin-left': Math.round(-(mw/2))+'px', 'height':'274px'});
+                        }
+                    });
+                });
+
+                $('.fallbox li').hover(function(){
+                    //$(this).find('.yytip').animate({'bottom': '-40px'}, 200);
+                    $(this).find('a').fadeIn();
+                },function(){
+                    $(this).find('a').fadeOut();
+                    //$(this).find('.yytip').animate({'bottom': '0px'}, 200);
+                });
+            };callbackList();
+			
+			$('.secnav li:eq(0) a').click(function(){
+				shake(3);
+			});
+        });
+		
+		bzAll();setInterval('bzAll()', 60000);
+		
+        window.onload = function(){
+            var url = window.location.hash;
+            if(url == '#bsss'){
+                shake(3);
+            }
+        };
+    </script>
+    
+</body>
+</html>

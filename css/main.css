@@ -1,7 +1,7 @@
 /*
     author: Javie Chan
     date: 2015-05-28
-    update: 2016-01-05
+    update: 2016-01-06
 */
 
 /************common***************/
@@ -2450,6 +2450,14 @@ span.bdzo{ background-position: -1000px -200px;}
     background: #0a80d6;
     margin-top: 24px;
 }
+.jobs_right .jobs_file{
+    border: 1px dotted#999;
+    margin: 30px 0px 10px 0px;
+    padding: 5px;
+    background-color: #eee;
+}
+.jobs_right .jobs_file a{ color: #06c; }
+.jobs_right .jobs_file a:hover{ text-decoration:underline; }
 
 /*    联系我们     */
 .ab_wrapper, .jobs_wrapper{

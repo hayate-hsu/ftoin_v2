@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta property="wb:webmaster" content="196ca99c76d3ffd2" />
     <title>人才招聘-NIOT广州中国科学院计算机网络信息中心</title>
-    <!--<script type="text/javascript" src="/js/html5shiv.js"></script>-->
     <link rel="stylesheet" href="/css/main.min.css" />
 </head>
 
@@ -22,7 +21,6 @@
             <div class="jobs">
                 <div class="tt_h3">职位</div>
                 <ul>
-                <!--MAKO招聘列表-->
                 % for job in jobs:
                     <li class="li_${job['id']}">${job['title']}</li>
                 % endfor
@@ -44,22 +42,13 @@
                     <div class="jobs_name">${job['subtitle']}</div>
                     <span class="line"></span>
                     <div class="jobs_content">${job['content']}</div>
+                    % if job['image']:
+                    <div class="jobs_file">附件：<a target="_blank" href="${cms}${job['image']}">${job['image'][11:]}</a></div>
+                    % endif
                 </div>
            % endfor
         </div>
     </section>
-
-    <!--<p class="maplink">-->
-        <!--<a href="#" class="on">首页</a>-->
-        <!--<a href="#">查询平台</a>-->
-        <!--<a href="#">注册平台</a>-->
-        <!--<a href="#">关于我们</a>-->
-        <!--<a href="#">成功案例</a>-->
-        <!--<a href="#">应用推广</a>-->
-        <!--<a href="#">技术资料</a>-->
-        <!--<a href="#">新闻动态</a>-->
-        <!--<a href="#">通知公告</a>-->
-    <!--</p>-->
     
     <!--页尾-->
 	<%include file="include/footer.html"/>

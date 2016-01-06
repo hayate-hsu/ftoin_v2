@@ -71,28 +71,9 @@
 			//根据页码重新设定下一页、序号参数
 			var nPageNum = pageNum+3;
 			if(pageNum == 4 || (aIndex == pageNum)){ nPageNum = pageNum - 1; }
-			/*
-			if(aIndex == 2 && pageNum == 1){ $nSlide = $(".slide:eq(4)"); }+3
-			if(aIndex == 2 && pageNum == 2){ $nSlide = $(".slide:eq(1)"); }+3-4
-			if(aIndex == 2 && pageNum == 4){ $nSlide = $(".slide:eq(3)"); }+3-4
-			
-			if(aIndex == 3 && pageNum == 1){ $nSlide = $(".slide:eq(4)"); }+3
-			if(aIndex == 3 && pageNum == 2){ $nSlide = $(".slide:eq(5)"); }+3
-			if(aIndex == 3 && pageNum == 3){ $nSlide = $(".slide:eq(2)"); }+3-4
-			
-			if(aIndex == 4 && pageNum == 2){ $nSlide = $(".slide:eq(5)"); }+3
-			if(aIndex == 4 && pageNum == 3){ $nSlide = $(".slide:eq(6)"); }+3
-			if(aIndex == 4 && pageNum == 4){ $nSlide = $(".slide:eq(3)"); }+3-4
-			
-			if(aIndex == 5 && pageNum == 1){ $nSlide = $(".slide:eq(4)"); }+3
-			if(aIndex == 5 && pageNum == 3){ $nSlide = $(".slide:eq(6)"); }+3
-			if(aIndex == 5 && pageNum == 4){ $nSlide = $(".slide:eq(3)"); }+3-4
-			*/
+
 			
 			$nSlide = $(".slide:eq("+nPageNum+")");
-			//if(pageNum<3){ aIndex = pageNum + 2; }
-			//else{ aIndex = pageNum - 2; }			
-			//$nSlide = $(".slide:eq("+(aIndex+1)+")");
 		}
 		var nIndex = $nSlide.index();
 		//当前页动画
@@ -210,13 +191,6 @@
     $('.bdSearch input').click(function(event){
         event.stopPropagation();
     });
-
-    //主页-技术咨询
-    //$('.fallbox li').hover(function(){
-    //    $(this).find('a').fadeIn();
-    //},function(){
-    //    $(this).find('a').fadeOut();
-    //});
 
     //智能城市
     $('.zncs00 li').hover(function(){
@@ -496,14 +470,6 @@
         }
     });
 
-/*    $('.bzad:eq(0)').addClass('on');
-	$('.bzad').hover(function(){
-        $('.bz_info').css('z-index', 1001).stop(true,false).animate({'opacity': 1}, { queue:false, duration:400});
-        $(this).addClass('on').siblings().removeClass('on');
-    },function(){
-        $('.bz_info').animate({'opacity': 0}, { queue:false, duration:400});
-        $('.bz_info').animate({'z-index': 999}, { queue:false, duration:400});
-    });*/
     $('.bzad a:eq(0)').hover(function(){
         $('.bz_info').fadeIn();
     },function(){
@@ -600,110 +566,6 @@
         }
     });
 
-    //大事件-时间轴
-    //var axh=axt=zw='', dan=170, kai=26, axw=340*2, len=10, flag=false;   //zw:实际总宽度, len:大事件个数
-    //zw = -len*dan+kai;
-    //for(var i=1; i<=len; i++){
-    //    if(i%2==0){
-    //        axt='<div class="axis">';
-    //    }else{
-    //        if(i==1){
-    //            axt='<div class="axis axdown on">';
-    //        }else{
-    //            axt='<div class="axis axdown">';
-    //        }
-    //    }
-    //    axt += '<img src="/images/bidong_s.jpg" /><div><p class="axtime">2013-12-24</p><p class="axcontent">中国（广东）自由贸易试验区 广州南沙新区片区信息中心正式落地 信息中心依托NIOT建设发展</p></div><i class="dot"></i></div>';
-    //
-    //    axh += axt;
-    //}
-    //$('.timeline').html(axh);
-    //$('.timeline .axis').each(function(i){
-    //    $(this).css('left', (i*dan+kai)+'px');
-    //    if(i<4){
-    //        $(this).delay((i+1)*100).animate({'opacity': 1}, 400);
-    //    }
-    //});
-    //
-    //var checkTimeline = function(w){
-    //    $('#axis_right').removeClass('axis_right_dis').addClass('axis_right');
-    //    $('#axis_left').removeClass('axis_left_dis').addClass('axis_left');
-    //    if(w>=0){
-    //        $('#axis_left').removeClass('axis_left').addClass('axis_left_dis');
-    //    }
-    //    if(w<=zw+axw){
-    //        $('#axis_right').removeClass('axis_right').addClass('axis_right_dis');
-    //    }
-    //};
-    //checkTimeline(0);
-    //
-    //$('#axis_right').click(function(){
-    //    if(flag){
-    //        return false;
-    //    }else{
-    //        flag = true;
-    //
-    //        var axleft = parseInt($('.timeline').css('left'));
-    //        if($(this).hasClass('axis_right_dis')){
-    //            return false;
-    //        }else{
-    //            var axorg = Math.abs(axleft) / axw;
-    //            axleft = axleft - axw;
-    //            var axflag = Math.abs(axleft) / axw;
-    //            var f = g = 0;
-    //            for(var i=0; i<4; i++){
-    //                var axi = axflag * 4 + i;
-    //                f += 1;
-    //                $('.timeline .axis').eq(axi).delay((f+1)*100).animate({'opacity': 1}, 400);
-    //            }
-    //            for(var j=0; j<4; j++){
-    //                var axj = axorg * 4 + j;
-    //                g += 1;
-    //                $('.timeline .axis').eq(axj).delay((g+1)*100).animate({'opacity': 0}, 400);
-    //            }
-    //            $('.timeline').stop(true, true).animate({'left': axleft+'px'}, 1000, function(){
-    //                flag = false;
-    //            });
-    //        }
-    //        checkTimeline(axleft);
-    //    }
-    //});
-    //$('#axis_left').click(function(){
-    //    if(flag){
-    //        return false;
-    //    }else {
-    //        flag = true;
-    //
-    //        var axleft = parseInt($('.timeline').css('left'));
-    //        if ($(this).hasClass('axis_left_dis')) {
-    //            return false;
-    //        } else {
-    //            var axorg = Math.abs(axleft) / axw;
-    //            axleft = axleft + axw;
-    //            var axflag = Math.abs(axleft) / axw;
-    //            var f = g = 0;
-    //            for (var i = 3; i >= 0; i--) {
-    //                var axi = axflag * 4 + i;
-    //                f += 1;
-    //                $('.timeline .axis').eq(axi).delay((f + 1) * 100).animate({'opacity': 1}, 400);
-    //            }
-    //            for (var j = 3; j >= 0; j--) {
-    //                var axj = axorg * 4 + j;
-    //                g += 1;
-    //                $('.timeline .axis').eq(axj).delay((g + 1) * 100).animate({'opacity': 0}, 400);
-    //            }
-    //            $('.timeline').stop(true, true).animate({'left': axleft + 'px'}, 1000, function(){
-    //                flag = false;
-    //            });
-    //        }
-    //        checkTimeline(axleft);
-    //    }
-    //});
-    //$(document).on('click', '.dot', function(){
-    //    var $this = $(this);
-    //    var idx = $(this).parent().index();
-    //    $this.parent().addClass('on').siblings().removeClass('on');
-    //});
 });
 
 function Trim(str){   //去掉所有空格
@@ -714,7 +576,7 @@ function Trim(str){   //去掉所有空格
 //历史查询和今日查询
 function bzAll(){
     $.ajax({
-        url: 'http://58.241.41.150:8888/collect',
+        url: 'http://58.241.39.198:8888/collect',//58.241.41.150
         type: "get",
         dataType: "json",
         success: function(data){

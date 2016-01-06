@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta property="wb:webmaster" content="196ca99c76d3ffd2" />
     <title>通知公告-广州中国科学院计算机网络信息中心</title>
-    <!--<script type="text/javascript" src="/js/html5shiv.js"></script>-->
     <link rel="stylesheet" href="/css/main.min.css" />
 </head>
 
@@ -20,7 +19,6 @@
                 <a href="/">首页</a> / <span>通知公告</span>
             </div>
             <ul class="noticeList">
-            	<!--MAKO加载通知公告列表-->
                 % for message in notices:
                     <li>
                         <a target="_blank" href="/newsdetail.html?id=${message['id']}" title="${message['title']}">${message['title']}</a>

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta property="wb:webmaster" content="196ca99c76d3ffd2" />
     <title>新闻资讯-广州中国科学院计算机网络信息中心</title>
-    <!--<script type="text/javascript" src="/js/html5shiv.js"></script>-->
     <link rel="stylesheet" href="/css/main.min.css" />
 </head>
 
@@ -20,7 +19,6 @@
                 <a href="/">首页</a> / <span>新闻资讯</span>
             </div>
             <div class="newsTown">
-            	<!--MAKO加载新闻资讯-->
                 % for index,message in enumerate(news):
                 	% if not index:
                         <div class="nwBanner">
@@ -37,13 +35,7 @@
                             </div>
                         </div>                    
                     % endif
-                % endfor
-                    <!--
-                    % if not index:
-                        <p>${message['subtitle'][0:70]}</p>
-                        <span class="nwTime">${message['ctime'].strftime('%Y-%m-%d')}</span>
-                    % endif
-                    -->                    
+                % endfor                 
             </div>
             <div class="newsPages">
                 <button class="more">加载更多</button>

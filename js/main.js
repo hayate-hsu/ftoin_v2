@@ -576,9 +576,10 @@ function Trim(str){   //去掉所有空格
 //历史查询和今日查询
 function bzAll(){
     $.ajax({
-        url: 'http://58.241.39.198:8888/collect',//58.241.41.150
+        url: 'http://niot-analysis.cniotroot.cn:8888/collect?t=jsonp',
         type: "get",
-        dataType: "json",
+		dataType:'jsonp',
+		jsonpCallback:'funcname',
         success: function(data){
             $('#bz_all').html(data.total);
             $('#bz_today').html(data.today);

@@ -1,7 +1,6 @@
 /* Created by fxh on 2015/12/31 */
 ;$(function(){
-	//浏览器版本
-    window.cmsUrl = 'http://cms.cniotroot.cn';//'http://cms.bidongwifi.com/';
+    window.cmsUrl = 'http://cms.cniotroot.cn/';//'http://cms.bidongwifi.com/';
     if(checkBrower()){cmsUrl = 'http://www.cniotroot.cn/cms/';}
 	
 	var urlList = 'message',
@@ -83,6 +82,7 @@
 });
 
 
+//浏览器版本
 function checkBrower(){
     if(/ie/gi.test(navigator.userAgent)){
 		return true;

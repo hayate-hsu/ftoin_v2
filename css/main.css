@@ -45,6 +45,7 @@ input,textarea{ font-family: "microsoft yahei", Arial, Helvetica, sans-serif;}
 .kb_modal i{ display: block; text-indent: -9999px;}
 
 /************header***************/
+.ouheader{}
 header{ height: 82px;}
 .logo{
     background: url("../images/logo.png") no-repeat;
@@ -699,6 +700,19 @@ header{ height: 82px;}
 .fallbox li.fb08{  top: 598px;  left: 0;  }
 .fallbox li.fb09{  top: 598px;  left: 299px; width: 572px;  }
 .fallbox li.fb010{  top: 598px;  left: 896px;  }
+
+.layer_header a.test1222{
+    font-size:22px;font-family:"microsoft yahei";
+    background: url("../images/sprite.png") -184px -213px no-repeat;
+    width:251px;
+    height:56px;
+    line-height:56px;
+    position:absolute;
+    top:69px;
+    right:0;
+    color:#fff;
+}
+.layer_header a.test1222:hover{ background-position:-184px -269px;}
 /*==========首页新闻资讯常态显示标题待定 begin ===========*/
 .yytip{
     position: absolute;
@@ -3556,6 +3570,48 @@ span.bdzo{ background-position: -1000px -200px;}
     background: url("../images/zmq03.jpg") top center no-repeat;
     height: 504px;
 }
+/*************that's all**************/
+
+/* 2016 new year */
+body{ background: url("../images/ny2016/footerbg.png") bottom center no-repeat;}
+.ouheader.ny{
+    background: url("../images/ny2016/headerbg.jpg") top center no-repeat;
+    height: 142px;
+    font-family: "新宋体";
+}
+.ouheader.ny header .logo{ background: url("../images/ny2016/logo.png") no-repeat;}
+.ouheader.ny header .fstnav a{ color: #fade21;}
+.ouheader.ny header .fstnav a:hover, .ouheader.ny header .fstnav a.on{ color: #fff;}
+.ouheader.ny header .fstnav span{ color: #fade21;}
+.ouheader.ny .secnav{ background: none;}
+.ouheader.ny .secnav li a{ color: #f0e075; background: none;}
+.ouheader.ny .secnav li a:hover, .ouheader.ny .secnav li a.on{ color: #fff;}
+
+footer.ny{ background: none;}
+.ny .friendlink{ width: 900px;}
+.ny .flinkbox{ margin: 0 9px;}
+.ny .moselect{
+    background: url("../images/ny2016/selectbg.png") no-repeat;
+    width: 282px;
+    height: 45px;
+    line-height: 45px;
+    color: #d41f27;
+    text-indent: 35px;
+}
+.ny .flinkbox ul{
+    bottom: 45px;
+    left: 27px;
+}
+.ny .flinkbox li{
+    width: 202px;
+    border: 1px solid #d7181e;
+    border-bottom: none;
+    background: #fff;
+}
+.ny .flinkbox li a{ color: #333;}
+.ny .flinkbox li a:hover{ color: #d41f27;}
+
+/* 2016 new year all */
 
 @media screen and (max-width:1280px){
     header, .secnav, section, footer{

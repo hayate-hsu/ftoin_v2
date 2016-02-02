@@ -74,9 +74,10 @@
     <section class="layer02">
         <div class="layer_wrapper">
             <div class="showVideo">
-                <object id='splayer' width='640' height='326'>
+                <object id='splayer' width='640' height='326' style="display: block; overflow: hidden;">
                     <param name='allowScriptAccess' value='opaque' />
-                    <embed src="http://player.youku.com/player.php/sid/XOTUwODAxNTI0/v.swf" rel="nofollow" allowFullScreen="false" quality="high" width="640" height="326" align="middle" allowScriptAccess="always" wmode="opaque" type="application/x-shockwave-flash"></embed>
+                    <!--<embed src="http://player.youku.com/player.php/sid/XOTUwODAxNTI0/v.swf" rel="nofollow" allowFullScreen="false" quality="high" width="640" height="326" align="middle" allowScriptAccess="always" wmode="opaque" type="application/x-shockwave-flash"></embed>-->
+                    <embed src="http://static.video.qq.com/TPout.swf?vid=i0181e9sigu&auto=0" allowFullScreen="true" quality="high" width="640" height="360" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
                 </object>
                 <p>we are NIOT</p>
                 <div>NIOT团队秉承专注、快速、创造、感恩的价值体系，是中国物联网行业的前行者</div>
@@ -183,7 +184,7 @@
 
     <!--页尾-->
 	<%include file="include/footer.html"/>
-    
+
     <!--页面右侧浮动公众号、客服电话、回顶部-->
 	<%include file="include/aside.html"/>
 

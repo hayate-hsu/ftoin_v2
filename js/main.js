@@ -38,9 +38,9 @@
 
     $.extend({
         hotImg: function () {
-            var i = $('.banner li.on').index(), max=32, min=16;
+            var i = $('.banner li.on').index(), max=32, min=18;
 
-            if(i==1){
+            if(i==2){
                 $('.bannerImg div').eq(0).animate({opacity: 1}, 800).siblings().animate({opacity: 0}, 800);
                 $('.banner li').eq(0).addClass('on').animate({"width": max+"px"}, 100);
                 $('.banner li').eq(i).removeClass('on').animate({"width": min+"px"}, 100);
@@ -565,6 +565,37 @@
             lastzmq = idx;
         }
     });
+
+    //2016新年
+    var nytime = sessionStorage.getItem('nytime');
+    if(nytime){
+        return false;
+    }else{
+        setTimeout(function(){
+            var ny = '<div class="nyzz"></div>'+
+                '<div class="nymon">'+
+                    '<div class="monkey"></div>'+
+                    '<div class="flower1"></div>'+
+                    '<div class="flower2"></div>'+
+                    '<div class="flower3"></div>'+
+                    '<div class="flower4"></div>'+
+                    '<div class="hbao1"></div>'+
+                    '<div class="hbao2"></div>'+
+                    '<div class="hbao3"></div>'+
+                    '<div class="hbao4"></div>'+
+                    '<div class="hbao5"></div>'+
+                '</div>';
+            $('body').append(ny);
+            $('.nyzz, .nymon').fadeIn();
+            $('.monkey, .flower1, .flower2, .flower3, .flower4, .hbao1, .hbao2, .hbao3, .hbao4, .hbao5').addClass('in');
+        }, 2000);
+        setTimeout(function(){
+            $('.nyzz, .nymon').fadeOut(function(){
+                $('.nyzz, .nymon').remove();
+            });
+        }, 5500);
+        sessionStorage.setItem('nytime', true);
+    }
 
 });
 

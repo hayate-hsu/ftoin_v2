@@ -136,8 +136,7 @@ header{ height: 82px;}
     z-index: 998;
     height: 376px;
 }
-.banner .img01{
-    background: url("../images/banner01.jpg") top center no-repeat;
+.banner .img01, .banner .img02, .banner .img03{
     height: 376px;
     opacity: 0;
     position: absolute;
@@ -145,20 +144,20 @@ header{ height: 82px;}
     left: 0;
     width: 100%;
 }
+.banner .img01{
+    background: url("../images/banner01.jpg") top center no-repeat;
+}
 .banner .img02{
     background: url("../images/banner02.jpg") top center no-repeat;
-    height: 376px;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 .banner .img02 .faily{ position: relative;}
 .banner .img02 .faily img{
     width: 596px;
     height: 376px;
     margin: 0 0 0 465px;
+}
+.banner .img03{
+    background: url("../images/banner03.jpg") top center no-repeat;
 }
 
 .banner ul{
@@ -3608,8 +3607,249 @@ footer.ny{ background: none;}
     border-bottom: none;
     background: #fff;
 }
-.ny .flinkbox li a{ color: #333;}
+.ny .flinkbox li a{ color: #2a2a2a;}
 .ny .flinkbox li a:hover{ color: #d41f27;}
+
+.nyzz{
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1000;
+    display: none;
+}
+.nymon{
+    display: none;
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    margin-left: -325px;
+    z-index: 10001;
+    width: 650px;
+    height: 600px;
+}
+.nymon .flower1{
+    opacity: 0;
+    background: url("../images/ny2016/flower1.png") no-repeat;
+    width: 210px;
+    height: 171px;
+    position: absolute;
+    top: 165px;
+    left: 17px;
+}
+.nymon .flower1.in{
+    animation:fadeInUp 0.3s ease 0.6s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+.nymon .flower2{
+    opacity: 0;
+    background: url("../images/ny2016/flower2.png") no-repeat;
+    width: 216px;
+    height: 176px;
+    position: absolute;
+    top: 0;
+    right: 17px;
+}
+.nymon .flower2.in{
+    animation:fadeInUp 0.3s ease 0.8s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+.nymon .flower3{
+    opacity: 0;
+    background: url("../images/ny2016/flower3.png") no-repeat;
+    width: 75px;
+    height: 70px;
+    position: absolute;
+    top: 133px;
+    left: 231px;
+}
+.nymon .flower3.in{
+    animation:fadeInUp 0.3s ease 0.5s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+.nymon .flower4{
+    opacity: 0;
+    background: url("../images/ny2016/flower4.png") no-repeat;
+    width: 73px;
+    height: 68px;
+    position: absolute;
+    top: 349px;
+    right: 92px;
+}
+.nymon .flower4.in{
+    animation:fadeInUp 0.3s ease 0.7s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+.nymon .hbao1, .nymon .hbao2, .nymon .hbao3, .nymon .hbao4, .nymon .hbao5{
+    opacity: 0;
+    background: url("../images/ny2016/hongbao.png") no-repeat;
+    width: 62px;
+    height: 92px;
+    position: absolute;
+    bottom: 25%;
+    left: 48%;
+}
+.nymon .hbao1.in{
+    animation: hongbao1 1.2s ease 1.3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+.nymon .hbao2.in{
+    animation: hongbao2 1.4s ease 1.3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+.nymon .hbao3.in{
+    animation: hongbao3 1.2s ease 1.4s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+.nymon .hbao4.in{
+    animation: hongbao4 0.9s ease 1.5s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+.nymon .hbao5.in{
+    animation: hongbao5 0.9s ease 1.5s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+.nymon .monkey{
+    opacity: 0;
+    background: url("../images/ny2016/monkey.png") no-repeat;
+    width: 538px;
+    height: 412px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+.nymon .monkey.in{
+    animation: monkeyAn 1.6s ease;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes monkeyAn {
+    0%{
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+    30%{
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+    84%{ transform: rotate(0deg);opacity: 1;}
+    86%{ transform: rotate(-3deg);opacity: 1;}
+    88%{ transform: rotate(0deg);opacity: 1;}
+    90%{ transform: rotate(3deg);opacity: 1;}
+    92%{ transform: rotate(0deg);opacity: 1;}
+    94%{ transform: rotate(-3deg);opacity: 1;}
+    96%{ transform: rotate(0deg);opacity: 1;}
+    98%{ transform: rotate(3deg);opacity: 1;}
+    100%{ transform: rotate(0deg);opacity: 1;}
+}
+@-webkit-keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translate(0, 100%) scale(0.5, 0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0) scale(1, 1);
+    }
+}
+@-webkit-keyframes hongbao1 {
+    0%{
+        transform: rotate(-30deg) scale(0.2, 0.2);
+        opacity: 1;
+    }
+    75%{
+        transform: rotate(-75deg) scale(0.5, 0.5);
+        left: 25%;
+        bottom: 35%;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-75deg) scale(0.5, 0.5);
+        left: 17%;
+        bottom: 37%;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes hongbao2 {
+    0%{
+        transform: rotate(20deg) scale(0.5, 0.5);
+    }
+    75%{
+        transform: rotate(80deg) scale(0.8, 0.8);
+        left: 75%;
+        bottom: 25%;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(80deg) scale(0.8, 0.8);
+        left: 75%;
+        bottom: 25%;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes hongbao3 {
+    0%{
+        transform: rotate(30deg) scale(0.5, 0.5);
+    }
+    75%{
+        transform: rotate(-35deg) scale(1, 1);
+        left: 35%;
+        bottom: 5%;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-35deg) scale(1, 1);
+        left: 35%;
+        bottom: 5%;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes hongbao4 {
+    0%{
+        transform: rotate(-10deg) scale(0.5, 0.5);
+    }
+    75%{
+        transform: rotate(-135deg) scale(0.8, 0.8);
+        left: 15%;
+        bottom: 30%;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-135deg) scale(0.8, 0.8);
+        left: 15%;
+        bottom: 30%;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes hongbao5 {
+    0%{
+        transform: rotate(5deg) scale(0.2, 0.2);
+    }
+    75%{
+        transform: rotate(65deg) scale(0.6, 0.6);
+        left: 70%;
+        bottom: 45%;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(65deg) scale(0.6, 0.6);
+        left: 70%;
+        bottom: 45%;
+        opacity: 0;
+    }
+}
 
 /* 2016 new year all */
 

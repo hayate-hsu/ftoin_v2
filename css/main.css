@@ -956,8 +956,10 @@ header{ height: 82px;}
     padding: 10px;
     border-radius: 4px;
     display: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
-.showPhone p{ line-height: 24px;}
+.showPhone p{ line-height: 24px; margin: 0;}
 .showEwm div{
     width: 130px;
     border-radius: 4px;
@@ -1091,6 +1093,7 @@ footer .friendlink{
     bottom: 26px;
     left: 0;
     display: none;
+    margin-bottom: 0;
 }
 .flinkbox li{
     width: 220px;
@@ -1098,6 +1101,8 @@ footer .friendlink{
     padding: 0 10px;
     background: rgba(4,76,145,0.9);
     *background: #055994 !important;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
 .flinkbox li:hover{  background: #43a9ea;}
 .flinkbox li a{
@@ -3612,6 +3617,7 @@ footer .friendlink{ width: 900px;}
     border-bottom: none;
     background: #fff;
 }
+.flinkbox li:hover{ background: #fff;}
 .flinkbox li a{ color: #2a2a2a;}
 .flinkbox li a:hover{ color: #d41f27;}
 

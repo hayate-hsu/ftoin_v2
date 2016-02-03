@@ -3573,23 +3573,23 @@ span.bdzo{ background-position: -1000px -200px;}
 
 /* 2016 new year */
 body{ background: url("../images/ny2016/footerbg.png") bottom center no-repeat;}
-.ouheader.ny{
+.ouheader{
     background: url("../images/ny2016/headerbg.jpg") top center no-repeat;
     height: 142px;
     font-family: "新宋体";
 }
-.ouheader.ny header .logo{ background: url("../images/ny2016/logo.png") no-repeat;}
-.ouheader.ny header .fstnav a{ color: #fade21;}
-.ouheader.ny header .fstnav a:hover, .ouheader.ny header .fstnav a.on{ color: #fff;}
-.ouheader.ny header .fstnav span{ color: #fade21;}
-.ouheader.ny .secnav{ background: none;}
-.ouheader.ny .secnav li a{ color: #f0e075; background: none;}
-.ouheader.ny .secnav li a:hover, .ouheader.ny .secnav li a.on{ color: #fff;}
+.ouheader .logo{ background: url("../images/ny2016/logo.png") no-repeat;}
+.ouheader .fstnav a{ color: #fade21;}
+.ouheader .fstnav a:hover, .ouheader .fstnav a.on{ color: #fff;}
+.ouheader .fstnav span{ color: #fade21;}
+.ouheader .secnav{ background: none;}
+.ouheader .secnav li a{ color: #f0e075; background: none;}
+.ouheader .secnav li a:hover, .ouheader .secnav li a.on{ color: #fff; background: none;}
 
-footer.ny{ background: none;}
-.ny .friendlink{ width: 900px;}
-.ny .flinkbox{ margin: 0 9px;}
-.ny .moselect{
+footer{ background: none;}
+footer .friendlink{ width: 900px;}
+.flinkbox{ margin: 0 9px;}
+.moselect{
     background: url("../images/ny2016/selectbg.png") no-repeat;
     width: 282px;
     height: 45px;
@@ -3597,30 +3597,58 @@ footer.ny{ background: none;}
     color: #d41f27;
     text-indent: 35px;
 }
-.ny .flinkbox ul{
+.moselect i{
+    background: url("../images/ny2016/arrow.png") 6px 19px no-repeat;
+    width: 45px;
+    height: 45px;
+}
+.flinkbox ul{
     bottom: 45px;
     left: 27px;
 }
-.ny .flinkbox li{
+.flinkbox li{
     width: 202px;
     border: 1px solid #d7181e;
     border-bottom: none;
     background: #fff;
 }
-.ny .flinkbox li a{ color: #2a2a2a;}
-.ny .flinkbox li a:hover{ color: #d41f27;}
+.flinkbox li a{ color: #2a2a2a;}
+.flinkbox li a:hover{ color: #d41f27;}
 
-/*.ny .sus_wrapper{ height: 62px; margin-bottom: 0;}*/
-/*.ny .showEwm{ height: 60px; border-radius: 0; right: 30px; width: 0;}*/
-/*.ny .showEwm i{*/
-    /*background: url("../images/ny2016/fixicon.png") 0 0 no-repeat;*/
-    /*width: 62px;*/
-    /*height: 62px;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: -30px;*/
-    /*z-index: 999;*/
-/*}*/
+.sus_wrapper{ height: 60px; margin-bottom: 0;}
+.nyEwm i, .nyPhone i, .nyTop i, .nydl i{
+    background: url("../images/ny2016/fixicon.png") no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.nyEwm i{ background-position: 0 0;}
+.nyPhone i{ background-position: 0 -60px;}
+.nyTop i{ background-position: 0 -120px;}
+.nydl i{ background-position: 0 -180px; height: 67px;}
+.nydl{ cursor: default;}
+.sus_wrapper .showEwm, .sus_wrapper .showPhone, .sus_wrapper .uptotop{
+    height: 60px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 0;
+    right: 30px;
+    background: #d12832;
+}
+.sus_wrapper div, .sus_wrapper div:hover{ background: #d12832;}
+.showEwm p.downline{ border-bottom: 1px dashed #da535b;}
+.uptotop p{ line-height: 60px;}
+.dots{ margin-right: 21px;}
+.dots li{ background: url("../images/ny2016/dots.png") no-repeat;}
 
 .nyzz{
     background: rgba(0, 0, 0, 0.4);
@@ -3957,7 +3985,6 @@ footer.ny{ background: none;}
         opacity: 0;
     }
 }
-
 /* 2016 new year all */
 
 @media screen and (max-width:1280px){

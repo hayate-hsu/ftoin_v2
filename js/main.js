@@ -498,46 +498,46 @@
             $('.sus_top').fadeOut();
         }
     });
-    $(document).on('click', '.uptotop', function(){
+    $(document).on('click', '.sus_top', function(){
         $('body,html').animate({scrollTop: 0}, 700);
     });
 
     //侧面工具栏
-    $('.showEwm').hover(
+    $('.nyEwm').hover(
         function () {
             var $this = $(this);
-            $this.stop().animate({'width':'191px'}, 300);
-            $this.find('div').stop(true,true).fadeIn();
+            $this.find('.showEwm').stop().animate({'width':'191px'}, 300);
+            $this.find('.showEwm').find('div').stop(true,true).fadeIn();
         },
         function () {
             var $this = $(this);
-            $this.find('div').stop(true,true).hide();
-            $this.stop().animate({'width':'48px'}, 200);
+            $this.find('.showEwm').find('div').stop(true,true).hide();
+            $this.find('.showEwm').stop().animate({'width':'0'}, 200);
         }
     );
-    $('.showPhone').hover(
+    $('.nyPhone').hover(
         function () {
             var $this = $(this);
-            $this.stop().animate({'width':'222px'}, 300);
-            $this.find('div').stop(true,true).fadeIn();
+            $this.find('.showPhone').stop().animate({'width':'222px'}, 300);
+            $this.find('.showPhone').find('div').stop(true,true).fadeIn();
         },
         function () {
             var $this = $(this);
-            $this.find('div').stop(true,true).hide();
-            $this.stop().animate({'width':'48px'}, 200);
+            $this.find('.showPhone').find('div').stop(true,true).hide();
+            $this.find('.showPhone').stop().animate({'width':'0'}, 200);
 
         }
     );
-    $('.uptotop').hover(
+    $('.nyTop').hover(
         function () {
             var $this = $(this);
-            $this.stop().animate({'width':'160px'}, 300);
-            $this.find('div').stop(true,true).fadeIn();
+            $this.find('.uptotop').stop().animate({'width':'160px'}, 300);
+            $this.find('.uptotop').find('div').stop(true,true).fadeIn();
         },
         function () {
             var $this = $(this);
-            $this.find('div').stop(true,true).hide();
-            $this.stop().animate({'width':'48px'}, 200);
+            $this.find('.uptotop').find('div').stop(true,true).hide();
+            $this.find('.uptotop').stop().animate({'width':'0'}, 200);
 
         }
     );
@@ -585,7 +585,7 @@
                     '<div class="hbao4"></div>'+
                     '<div class="hbao5"></div>'+
                 '</div>';
-            $('body').append(ny);
+            $(document.body).append(ny);
             $('.nyzz, .nymon').fadeIn();
             $('.monkey, .flower1, .flower2, .flower3, .flower4, .hbao1, .hbao2, .hbao3, .hbao4, .hbao5').addClass('in');
         }, 2000);

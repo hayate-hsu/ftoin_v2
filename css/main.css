@@ -136,7 +136,7 @@ header{ height: 82px;}
     z-index: 998;
     height: 376px;
 }
-.banner .img01, .banner .img02, .banner .img03{
+.banner .img01, .banner .img02{
     height: 376px;
     opacity: 0;
     position: absolute;
@@ -155,9 +155,6 @@ header{ height: 82px;}
     width: 596px;
     height: 376px;
     margin: 0 0 0 465px;
-}
-.banner .img03{
-    background: url("../images/banner03.jpg") top center no-repeat;
 }
 
 .banner ul{
@@ -3578,420 +3575,420 @@ span.bdzo{ background-position: -1000px -200px;}
 /*************that's all**************/
 
 /* 2016 new year */
-body{ background: url("../images/ny2016/footerbg.png") bottom center no-repeat;}
-.ouheader{
-    background: url("../images/ny2016/headerbg.jpg") top center no-repeat;
-    height: 142px;
-    font-family: "新宋体";
-}
-.ouheader .logo{ background: url("../images/ny2016/logo.png") no-repeat;}
-.ouheader .fstnav a{ color: #fade21;}
-.ouheader .fstnav a:hover, .ouheader .fstnav a.on{ color: #fff;}
-.ouheader .fstnav span{ color: #fade21;}
-.ouheader .secnav{ background: none;}
-.ouheader .secnav li a{ color: #f0e075; background: none;}
-.ouheader .secnav li a:hover, .ouheader .secnav li a.on{ color: #fff; background: none;}
+/*body{ background: url("../images/ny2016/footerbg.png") bottom center no-repeat;}*/
+/*.ouheader{*/
+    /*background: url("../images/ny2016/headerbg.jpg") top center no-repeat;*/
+    /*height: 142px;*/
+    /*font-family: "新宋体";*/
+/*}*/
+/*.ouheader .logo{ background: url("../images/ny2016/logo.png") no-repeat;}*/
+/*.ouheader .fstnav a{ color: #fade21;}*/
+/*.ouheader .fstnav a:hover, .ouheader .fstnav a.on{ color: #fff;}*/
+/*.ouheader .fstnav span{ color: #fade21;}*/
+/*.ouheader .secnav{ background: none;}*/
+/*.ouheader .secnav li a{ color: #f0e075; background: none;}*/
+/*.ouheader .secnav li a:hover, .ouheader .secnav li a.on{ color: #fff; background: none;}*/
 
-footer{ background: none;}
-footer .friendlink{ width: 900px;}
-.flinkbox{ margin: 0 9px;}
-.moselect{
-    background: url("../images/ny2016/selectbg.png") no-repeat;
-    width: 282px;
-    height: 45px;
-    line-height: 45px;
-    color: #d41f27;
-    text-indent: 35px;
-}
-.moselect i{
-    background: url("../images/ny2016/arrow.png") 6px 19px no-repeat;
-    width: 45px;
-    height: 45px;
-}
-.flinkbox ul{
-    bottom: 45px;
-    left: 27px;
-}
-.flinkbox li{
-    width: 202px;
-    border: 1px solid #d7181e;
-    border-bottom: none;
-    background: #fff;
-}
-.flinkbox li:hover{ background: #fff;}
-.flinkbox li a{ color: #2a2a2a;}
-.flinkbox li a:hover{ color: #d41f27;}
+/*footer{ background: none;}*/
+/*footer .friendlink{ width: 900px;}*/
+/*.flinkbox{ margin: 0 9px;}*/
+/*.moselect{*/
+    /*background: url("../images/ny2016/selectbg.png") no-repeat;*/
+    /*width: 282px;*/
+    /*height: 45px;*/
+    /*line-height: 45px;*/
+    /*color: #d41f27;*/
+    /*text-indent: 35px;*/
+/*}*/
+/*.moselect i{*/
+    /*background: url("../images/ny2016/arrow.png") 6px 19px no-repeat;*/
+    /*width: 45px;*/
+    /*height: 45px;*/
+/*}*/
+/*.flinkbox ul{*/
+    /*bottom: 45px;*/
+    /*left: 27px;*/
+/*}*/
+/*.flinkbox li{*/
+    /*width: 202px;*/
+    /*border: 1px solid #d7181e;*/
+    /*border-bottom: none;*/
+    /*background: #fff;*/
+/*}*/
+/*.flinkbox li:hover{ background: #fff;}*/
+/*.flinkbox li a{ color: #2a2a2a;}*/
+/*.flinkbox li a:hover{ color: #d41f27;}*/
 
-.sus_wrapper{ height: 60px; margin-bottom: 0;}
-.nyEwm i, .nyPhone i, .nyTop i, .nydl i{
-    background: url("../images/ny2016/fixicon.png") no-repeat;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.nyEwm i{ background-position: 0 0;}
-.nyPhone i{ background-position: 0 -60px;}
-.nyTop i{ background-position: 0 -120px;}
-.nydl i{ background-position: 0 -180px; height: 67px;}
-.nydl{ cursor: default;}
-.sus_wrapper .showEwm, .sus_wrapper .showPhone, .sus_wrapper .uptotop{
-    height: 60px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-border-top-left-radius: 5px;
-    -moz-border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-bottom-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    width: 0;
-    right: 30px;
-    background: #d12832;
-}
-.sus_wrapper div, .sus_wrapper div:hover{ background: #d12832;}
-.showEwm p.downline{ border-bottom: 1px dashed #da535b;}
-.uptotop p{ line-height: 60px;}
-.dots{ margin-right: 21px;}
-.dots li{ background: url("../images/ny2016/dots.png") no-repeat;}
+/*.sus_wrapper{ height: 60px; margin-bottom: 0;}*/
+/*.nyEwm i, .nyPhone i, .nyTop i, .nydl i{*/
+    /*background: url("../images/ny2016/fixicon.png") no-repeat;*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+/*}*/
+/*.nyEwm i{ background-position: 0 0;}*/
+/*.nyPhone i{ background-position: 0 -60px;}*/
+/*.nyTop i{ background-position: 0 -120px;}*/
+/*.nydl i{ background-position: 0 -180px; height: 67px;}*/
+/*.nydl{ cursor: default;}*/
+/*.sus_wrapper .showEwm, .sus_wrapper .showPhone, .sus_wrapper .uptotop{*/
+    /*height: 60px;*/
+    /*-webkit-border-radius: 0;*/
+    /*-moz-border-radius: 0;*/
+    /*border-radius: 0;*/
+    /*-webkit-border-top-left-radius: 5px;*/
+    /*-moz-border-top-left-radius: 5px;*/
+    /*border-top-left-radius: 5px;*/
+    /*-webkit-border-bottom-left-radius: 5px;*/
+    /*-moz-border-bottom-left-radius: 5px;*/
+    /*border-bottom-left-radius: 5px;*/
+    /*width: 0;*/
+    /*right: 30px;*/
+    /*background: #d12832;*/
+/*}*/
+/*.sus_wrapper div, .sus_wrapper div:hover{ background: #d12832;}*/
+/*.showEwm p.downline{ border-bottom: 1px dashed #da535b;}*/
+/*.uptotop p{ line-height: 60px;}*/
+/*.dots{ margin-right: 21px;}*/
+/*.dots li{ background: url("../images/ny2016/dots.png") no-repeat;}*/
 
-.nyzz{
-    background: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0px;
-    right: 0px;
-    z-index: 1000;
-    display: none;
-}
-.nymon{
-    display: none;
-    position: fixed;
-    top: 12%;
-    left: 50%;
-    margin-left: -325px;
-    z-index: 10001;
-    width: 650px;
-    height: 600px;
-}
-.nymon .flower1{
-    opacity: 0;
-    background: url("../images/ny2016/flower1.png") no-repeat;
-    width: 210px;
-    height: 171px;
-    position: absolute;
-    top: 165px;
-    left: 17px;
-}
-.nymon .flower1.in{
-    -webkit-animation:fadeInUp 0.3s ease 0.6s;
-    -moz-animation:fadeInUp 0.3s ease 0.6s;
-    animation:fadeInUp 0.3s ease 0.6s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-}
-.nymon .flower2{
-    opacity: 0;
-    background: url("../images/ny2016/flower2.png") no-repeat;
-    width: 216px;
-    height: 176px;
-    position: absolute;
-    top: 0;
-    right: 17px;
-}
-.nymon .flower2.in{
-    -webkit-animation:fadeInUp 0.3s ease 0.8s;
-    -moz-animation:fadeInUp 0.3s ease 0.8s;
-    animation:fadeInUp 0.3s ease 0.8s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-}
-.nymon .flower3{
-    opacity: 0;
-    background: url("../images/ny2016/flower3.png") no-repeat;
-    width: 75px;
-    height: 70px;
-    position: absolute;
-    top: 133px;
-    left: 231px;
-}
-.nymon .flower3.in{
-    -webkit-animation:fadeInUp 0.3s ease 0.5s;
-    -moz-animation:fadeInUp 0.3s ease 0.5s;
-    animation:fadeInUp 0.3s ease 0.5s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-}
-.nymon .flower4{
-    opacity: 0;
-    background: url("../images/ny2016/flower4.png") no-repeat;
-    width: 73px;
-    height: 68px;
-    position: absolute;
-    top: 349px;
-    right: 92px;
-}
-.nymon .flower4.in{
-    -webkit-animation:fadeInUp 0.3s ease 0.7s;
-    -moz-animation:fadeInUp 0.3s ease 0.7s;
-    animation:fadeInUp 0.3s ease 0.7s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-}
-.nymon .hbao1, .nymon .hbao2, .nymon .hbao3, .nymon .hbao4, .nymon .hbao5{
-    opacity: 0;
-    background: url("../images/ny2016/hongbao.png") no-repeat;
-    width: 62px;
-    height: 92px;
-    position: absolute;
-    bottom: 25%;
-    left: 48%;
-}
-.nymon .hbao1.in{
-    -webkit-animation: hongbao1 1.2s ease 1.3s;
-    -moz-animation: hongbao1 1.2s ease 1.3s;
-    animation: hongbao1 1.2s ease 1.3s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-.nymon .hbao2.in{
-    -webkit-animation: hongbao2 1.4s ease 1.3s;
-    -moz-animation: hongbao2 1.4s ease 1.3s;
-    animation: hongbao2 1.4s ease 1.3s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-.nymon .hbao3.in{
-    -webkit-animation: hongbao3 1.2s ease 1.4s;
-    -moz-animation: hongbao3 1.2s ease 1.4s;
-    animation: hongbao3 1.2s ease 1.4s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-.nymon .hbao4.in{
-    -webkit-animation: hongbao4 0.9s ease 1.5s;
-    -moz-animation: hongbao4 0.9s ease 1.5s;
-    animation: hongbao4 0.9s ease 1.5s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-.nymon .hbao5.in{
-    -webkit-animation: hongbao5 0.9s ease 1.5s;
-    -moz-animation: hongbao5 0.9s ease 1.5s;
-    animation: hongbao5 0.9s ease 1.5s;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-.nymon .monkey{
-    opacity: 0;
-    background: url("../images/ny2016/monkey.png") no-repeat;
-    width: 538px;
-    height: 412px;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-}
-.nymon .monkey.in{
-    -webkit-animation: monkeyAn 1.6s ease;
-    -moz-animation: monkeyAn 1.6s ease;
-    animation: monkeyAn 1.6s ease;
-    -webkit-animation-iteration-count:1;
-    -moz-animation-iteration-count:1;
-    animation-iteration-count:1;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
+/*.nyzz{*/
+    /*background: rgba(0, 0, 0, 0.4);*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*bottom: 0px;*/
+    /*right: 0px;*/
+    /*z-index: 1000;*/
+    /*display: none;*/
+/*}*/
+/*.nymon{*/
+    /*display: none;*/
+    /*position: fixed;*/
+    /*top: 12%;*/
+    /*left: 50%;*/
+    /*margin-left: -325px;*/
+    /*z-index: 10001;*/
+    /*width: 650px;*/
+    /*height: 600px;*/
+/*}*/
+/*.nymon .flower1{*/
+    /*opacity: 0;*/
+    /*background: url("../images/ny2016/flower1.png") no-repeat;*/
+    /*width: 210px;*/
+    /*height: 171px;*/
+    /*position: absolute;*/
+    /*top: 165px;*/
+    /*left: 17px;*/
+/*}*/
+/*.nymon .flower1.in{*/
+    /*-webkit-animation:fadeInUp 0.3s ease 0.6s;*/
+    /*-moz-animation:fadeInUp 0.3s ease 0.6s;*/
+    /*animation:fadeInUp 0.3s ease 0.6s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode:forwards;*/
+    /*-moz-animation-fill-mode:forwards;*/
+    /*animation-fill-mode:forwards;*/
+/*}*/
+/*.nymon .flower2{*/
+    /*opacity: 0;*/
+    /*background: url("../images/ny2016/flower2.png") no-repeat;*/
+    /*width: 216px;*/
+    /*height: 176px;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 17px;*/
+/*}*/
+/*.nymon .flower2.in{*/
+    /*-webkit-animation:fadeInUp 0.3s ease 0.8s;*/
+    /*-moz-animation:fadeInUp 0.3s ease 0.8s;*/
+    /*animation:fadeInUp 0.3s ease 0.8s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode:forwards;*/
+    /*-moz-animation-fill-mode:forwards;*/
+    /*animation-fill-mode:forwards;*/
+/*}*/
+/*.nymon .flower3{*/
+    /*opacity: 0;*/
+    /*background: url("../images/ny2016/flower3.png") no-repeat;*/
+    /*width: 75px;*/
+    /*height: 70px;*/
+    /*position: absolute;*/
+    /*top: 133px;*/
+    /*left: 231px;*/
+/*}*/
+/*.nymon .flower3.in{*/
+    /*-webkit-animation:fadeInUp 0.3s ease 0.5s;*/
+    /*-moz-animation:fadeInUp 0.3s ease 0.5s;*/
+    /*animation:fadeInUp 0.3s ease 0.5s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode:forwards;*/
+    /*-moz-animation-fill-mode:forwards;*/
+    /*animation-fill-mode:forwards;*/
+/*}*/
+/*.nymon .flower4{*/
+    /*opacity: 0;*/
+    /*background: url("../images/ny2016/flower4.png") no-repeat;*/
+    /*width: 73px;*/
+    /*height: 68px;*/
+    /*position: absolute;*/
+    /*top: 349px;*/
+    /*right: 92px;*/
+/*}*/
+/*.nymon .flower4.in{*/
+    /*-webkit-animation:fadeInUp 0.3s ease 0.7s;*/
+    /*-moz-animation:fadeInUp 0.3s ease 0.7s;*/
+    /*animation:fadeInUp 0.3s ease 0.7s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode:forwards;*/
+    /*-moz-animation-fill-mode:forwards;*/
+    /*animation-fill-mode:forwards;*/
+/*}*/
+/*.nymon .hbao1, .nymon .hbao2, .nymon .hbao3, .nymon .hbao4, .nymon .hbao5{*/
+    /*opacity: 0;*/
+    /*background: url("../images/ny2016/hongbao.png") no-repeat;*/
+    /*width: 62px;*/
+    /*height: 92px;*/
+    /*position: absolute;*/
+    /*bottom: 25%;*/
+    /*left: 48%;*/
+/*}*/
+/*.nymon .hbao1.in{*/
+    /*-webkit-animation: hongbao1 1.2s ease 1.3s;*/
+    /*-moz-animation: hongbao1 1.2s ease 1.3s;*/
+    /*animation: hongbao1 1.2s ease 1.3s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+/*.nymon .hbao2.in{*/
+    /*-webkit-animation: hongbao2 1.4s ease 1.3s;*/
+    /*-moz-animation: hongbao2 1.4s ease 1.3s;*/
+    /*animation: hongbao2 1.4s ease 1.3s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+/*.nymon .hbao3.in{*/
+    /*-webkit-animation: hongbao3 1.2s ease 1.4s;*/
+    /*-moz-animation: hongbao3 1.2s ease 1.4s;*/
+    /*animation: hongbao3 1.2s ease 1.4s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+/*.nymon .hbao4.in{*/
+    /*-webkit-animation: hongbao4 0.9s ease 1.5s;*/
+    /*-moz-animation: hongbao4 0.9s ease 1.5s;*/
+    /*animation: hongbao4 0.9s ease 1.5s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+/*.nymon .hbao5.in{*/
+    /*-webkit-animation: hongbao5 0.9s ease 1.5s;*/
+    /*-moz-animation: hongbao5 0.9s ease 1.5s;*/
+    /*animation: hongbao5 0.9s ease 1.5s;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+/*.nymon .monkey{*/
+    /*opacity: 0;*/
+    /*background: url("../images/ny2016/monkey.png") no-repeat;*/
+    /*width: 538px;*/
+    /*height: 412px;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 10%;*/
+/*}*/
+/*.nymon .monkey.in{*/
+    /*-webkit-animation: monkeyAn 1.6s ease;*/
+    /*-moz-animation: monkeyAn 1.6s ease;*/
+    /*animation: monkeyAn 1.6s ease;*/
+    /*-webkit-animation-iteration-count:1;*/
+    /*-moz-animation-iteration-count:1;*/
+    /*animation-iteration-count:1;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
 
-@-webkit-keyframes monkeyAn {
-    0%{
-        opacity: 0;
-        -webkit-transform: scale(0.5, 0.5);
-        transform: scale(0.5, 0.5);
-    }
-    30%{
-        opacity: 1;
-        -webkit-transform: scale(1, 1);
-        transform: scale(1, 1);
-    }
-    84%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}
-    86%{ -webkit-transform: rotate(-3deg);-moz-transform: rotate(-3deg);transform: rotate(-3deg);opacity: 1;}
-    88%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}
-    90%{ -webkit-transform: rotate(3deg);-moz-transform: rotate(3deg);transform: rotate(3deg);opacity: 1;}
-    92%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}
-    94%{ -webkit-transform: rotate(-3deg);-moz-transform: rotate(-3deg);transform: rotate(-3deg);opacity: 1;}
-    96%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}
-    98%{ -webkit-transform: rotate(3deg);-moz-transform: rotate(3deg);transform: rotate(3deg);opacity: 1;}
-    100%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}
-}
-@-webkit-keyframes fadeInUp {
-    0%{
-        opacity: 0;
-        -webkit-transform: translate(0, 100%) scale(0.5, 0.5);
-        -moz-transform: translate(0, 100%) scale(0.5, 0.5);
-        transform: translate(0, 100%) scale(0.5, 0.5);
-    }
-    100%{
-        opacity: 1;
-        -webkit-transform: translate(0, 0) scale(1, 1);
-        -moz-transform: translate(0, 0) scale(1, 1);
-        transform: translate(0, 0) scale(1, 1);
-    }
-}
-@-webkit-keyframes hongbao1 {
-    0%{
-        -webkit-transform: rotate(-30deg) scale(0.2, 0.2);
-        -moz-transform: rotate(-30deg) scale(0.2, 0.2);
-        transform: rotate(-30deg) scale(0.2, 0.2);
-        opacity: 1;
-    }
-    75%{
-        -webkit-transform: rotate(-75deg) scale(0.5, 0.5);
-        -moz-transform: rotate(-75deg) scale(0.5, 0.5);
-        transform: rotate(-75deg) scale(0.5, 0.5);
-        left: 25%;
-        bottom: 35%;
-        opacity: 1;
-    }
-    100%{
-        -webkit-transform: rotate(-75deg) scale(0.5, 0.5);
-        -moz-transform: rotate(-75deg) scale(0.5, 0.5);
-        transform: rotate(-75deg) scale(0.5, 0.5);
-        left: 17%;
-        bottom: 37%;
-        opacity: 0;
-    }
-}
-@-webkit-keyframes hongbao2 {
-    0%{
-        -webkit-transform: rotate(20deg) scale(0.5, 0.5);
-        -moz-transform: rotate(20deg) scale(0.5, 0.5);
-        transform: rotate(20deg) scale(0.5, 0.5);
-    }
-    75%{
-        -webkit-transform: rotate(80deg) scale(0.8, 0.8);
-        -moz-transform: rotate(80deg) scale(0.8, 0.8);
-        transform: rotate(80deg) scale(0.8, 0.8);
-        left: 75%;
-        bottom: 25%;
-        opacity: 1;
-    }
-    100%{
-        -webkit-transform: rotate(80deg) scale(0.8, 0.8);
-        -moz-transform: rotate(80deg) scale(0.8, 0.8);
-        transform: rotate(80deg) scale(0.8, 0.8);
-        left: 75%;
-        bottom: 25%;
-        opacity: 0;
-    }
-}
-@-webkit-keyframes hongbao3 {
-    0%{
-        -webkit-transform: rotate(30deg) scale(0.5, 0.5);
-        -moz-transform: rotate(30deg) scale(0.5, 0.5);
-        transform: rotate(30deg) scale(0.5, 0.5);
-    }
-    75%{
-        -webkit-transform: rotate(-35deg) scale(1, 1);
-        -moz-transform: rotate(-35deg) scale(1, 1);
-        transform: rotate(-35deg) scale(1, 1);
-        left: 35%;
-        bottom: 5%;
-        opacity: 1;
-    }
-    100%{
-        -webkit-transform: rotate(-35deg) scale(1, 1);
-        -moz-transform: rotate(-35deg) scale(1, 1);
-        transform: rotate(-35deg) scale(1, 1);
-        left: 35%;
-        bottom: 5%;
-        opacity: 0;
-    }
-}
-@-webkit-keyframes hongbao4 {
-    0%{
-        -webkit-transform: rotate(-10deg) scale(0.5, 0.5);
-        -moz-transform: rotate(-10deg) scale(0.5, 0.5);
-        transform: rotate(-10deg) scale(0.5, 0.5);
-    }
-    75%{
-        -webkit-transform: rotate(-135deg) scale(0.8, 0.8);
-        -moz-transform: rotate(-135deg) scale(0.8, 0.8);
-        transform: rotate(-135deg) scale(0.8, 0.8);
-        left: 15%;
-        bottom: 30%;
-        opacity: 1;
-    }
-    100%{
-        -webkit-transform: rotate(-135deg) scale(0.8, 0.8);
-        transform: rotate(-135deg) scale(0.8, 0.8);
-        left: 15%;
-        bottom: 30%;
-        opacity: 0;
-    }
-}
-@-webkit-keyframes hongbao5 {
-    0%{
-        -webkit-transform: rotate(5deg) scale(0.2, 0.2);
-        -moz-transform: rotate(5deg) scale(0.2, 0.2);
-        transform: rotate(5deg) scale(0.2, 0.2);
-    }
-    75%{
-        -webkit-transform: rotate(65deg) scale(0.6, 0.6);
-        -moz-transform: rotate(65deg) scale(0.6, 0.6);
-        transform: rotate(65deg) scale(0.6, 0.6);
-        left: 70%;
-        bottom: 45%;
-        opacity: 1;
-    }
-    100%{
-        -webkit-transform: rotate(65deg) scale(0.6, 0.6);
-        -moz-transform: rotate(65deg) scale(0.6, 0.6);
-        transform: rotate(65deg) scale(0.6, 0.6);
-        left: 70%;
-        bottom: 45%;
-        opacity: 0;
-    }
-}
+/*@-webkit-keyframes monkeyAn {*/
+    /*0%{*/
+        /*opacity: 0;*/
+        /*-webkit-transform: scale(0.5, 0.5);*/
+        /*transform: scale(0.5, 0.5);*/
+    /*}*/
+    /*30%{*/
+        /*opacity: 1;*/
+        /*-webkit-transform: scale(1, 1);*/
+        /*transform: scale(1, 1);*/
+    /*}*/
+    /*84%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}*/
+    /*86%{ -webkit-transform: rotate(-3deg);-moz-transform: rotate(-3deg);transform: rotate(-3deg);opacity: 1;}*/
+    /*88%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}*/
+    /*90%{ -webkit-transform: rotate(3deg);-moz-transform: rotate(3deg);transform: rotate(3deg);opacity: 1;}*/
+    /*92%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}*/
+    /*94%{ -webkit-transform: rotate(-3deg);-moz-transform: rotate(-3deg);transform: rotate(-3deg);opacity: 1;}*/
+    /*96%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}*/
+    /*98%{ -webkit-transform: rotate(3deg);-moz-transform: rotate(3deg);transform: rotate(3deg);opacity: 1;}*/
+    /*100%{ -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);opacity: 1;}*/
+/*}*/
+/*@-webkit-keyframes fadeInUp {*/
+    /*0%{*/
+        /*opacity: 0;*/
+        /*-webkit-transform: translate(0, 100%) scale(0.5, 0.5);*/
+        /*-moz-transform: translate(0, 100%) scale(0.5, 0.5);*/
+        /*transform: translate(0, 100%) scale(0.5, 0.5);*/
+    /*}*/
+    /*100%{*/
+        /*opacity: 1;*/
+        /*-webkit-transform: translate(0, 0) scale(1, 1);*/
+        /*-moz-transform: translate(0, 0) scale(1, 1);*/
+        /*transform: translate(0, 0) scale(1, 1);*/
+    /*}*/
+/*}*/
+/*@-webkit-keyframes hongbao1 {*/
+    /*0%{*/
+        /*-webkit-transform: rotate(-30deg) scale(0.2, 0.2);*/
+        /*-moz-transform: rotate(-30deg) scale(0.2, 0.2);*/
+        /*transform: rotate(-30deg) scale(0.2, 0.2);*/
+        /*opacity: 1;*/
+    /*}*/
+    /*75%{*/
+        /*-webkit-transform: rotate(-75deg) scale(0.5, 0.5);*/
+        /*-moz-transform: rotate(-75deg) scale(0.5, 0.5);*/
+        /*transform: rotate(-75deg) scale(0.5, 0.5);*/
+        /*left: 25%;*/
+        /*bottom: 35%;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*100%{*/
+        /*-webkit-transform: rotate(-75deg) scale(0.5, 0.5);*/
+        /*-moz-transform: rotate(-75deg) scale(0.5, 0.5);*/
+        /*transform: rotate(-75deg) scale(0.5, 0.5);*/
+        /*left: 17%;*/
+        /*bottom: 37%;*/
+        /*opacity: 0;*/
+    /*}*/
+/*}*/
+/*@-webkit-keyframes hongbao2 {*/
+    /*0%{*/
+        /*-webkit-transform: rotate(20deg) scale(0.5, 0.5);*/
+        /*-moz-transform: rotate(20deg) scale(0.5, 0.5);*/
+        /*transform: rotate(20deg) scale(0.5, 0.5);*/
+    /*}*/
+    /*75%{*/
+        /*-webkit-transform: rotate(80deg) scale(0.8, 0.8);*/
+        /*-moz-transform: rotate(80deg) scale(0.8, 0.8);*/
+        /*transform: rotate(80deg) scale(0.8, 0.8);*/
+        /*left: 75%;*/
+        /*bottom: 25%;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*100%{*/
+        /*-webkit-transform: rotate(80deg) scale(0.8, 0.8);*/
+        /*-moz-transform: rotate(80deg) scale(0.8, 0.8);*/
+        /*transform: rotate(80deg) scale(0.8, 0.8);*/
+        /*left: 75%;*/
+        /*bottom: 25%;*/
+        /*opacity: 0;*/
+    /*}*/
+/*}*/
+/*@-webkit-keyframes hongbao3 {*/
+    /*0%{*/
+        /*-webkit-transform: rotate(30deg) scale(0.5, 0.5);*/
+        /*-moz-transform: rotate(30deg) scale(0.5, 0.5);*/
+        /*transform: rotate(30deg) scale(0.5, 0.5);*/
+    /*}*/
+    /*75%{*/
+        /*-webkit-transform: rotate(-35deg) scale(1, 1);*/
+        /*-moz-transform: rotate(-35deg) scale(1, 1);*/
+        /*transform: rotate(-35deg) scale(1, 1);*/
+        /*left: 35%;*/
+        /*bottom: 5%;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*100%{*/
+        /*-webkit-transform: rotate(-35deg) scale(1, 1);*/
+        /*-moz-transform: rotate(-35deg) scale(1, 1);*/
+        /*transform: rotate(-35deg) scale(1, 1);*/
+        /*left: 35%;*/
+        /*bottom: 5%;*/
+        /*opacity: 0;*/
+    /*}*/
+/*}*/
+/*@-webkit-keyframes hongbao4 {*/
+    /*0%{*/
+        /*-webkit-transform: rotate(-10deg) scale(0.5, 0.5);*/
+        /*-moz-transform: rotate(-10deg) scale(0.5, 0.5);*/
+        /*transform: rotate(-10deg) scale(0.5, 0.5);*/
+    /*}*/
+    /*75%{*/
+        /*-webkit-transform: rotate(-135deg) scale(0.8, 0.8);*/
+        /*-moz-transform: rotate(-135deg) scale(0.8, 0.8);*/
+        /*transform: rotate(-135deg) scale(0.8, 0.8);*/
+        /*left: 15%;*/
+        /*bottom: 30%;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*100%{*/
+        /*-webkit-transform: rotate(-135deg) scale(0.8, 0.8);*/
+        /*transform: rotate(-135deg) scale(0.8, 0.8);*/
+        /*left: 15%;*/
+        /*bottom: 30%;*/
+        /*opacity: 0;*/
+    /*}*/
+/*}*/
+/*@-webkit-keyframes hongbao5 {*/
+    /*0%{*/
+        /*-webkit-transform: rotate(5deg) scale(0.2, 0.2);*/
+        /*-moz-transform: rotate(5deg) scale(0.2, 0.2);*/
+        /*transform: rotate(5deg) scale(0.2, 0.2);*/
+    /*}*/
+    /*75%{*/
+        /*-webkit-transform: rotate(65deg) scale(0.6, 0.6);*/
+        /*-moz-transform: rotate(65deg) scale(0.6, 0.6);*/
+        /*transform: rotate(65deg) scale(0.6, 0.6);*/
+        /*left: 70%;*/
+        /*bottom: 45%;*/
+        /*opacity: 1;*/
+    /*}*/
+    /*100%{*/
+        /*-webkit-transform: rotate(65deg) scale(0.6, 0.6);*/
+        /*-moz-transform: rotate(65deg) scale(0.6, 0.6);*/
+        /*transform: rotate(65deg) scale(0.6, 0.6);*/
+        /*left: 70%;*/
+        /*bottom: 45%;*/
+        /*opacity: 0;*/
+    /*}*/
+/*}*/
 /* 2016 new year all */
 
 @media screen and (max-width:1280px){

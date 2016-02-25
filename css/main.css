@@ -1835,7 +1835,6 @@ article .contentTips{
 article .innw, article .outnw, article .tecnw{ margin-right: 20px;}
 article .bdTime{ color: #7a7a7a;}
 article .bdSign{ float: right;}
-article .content{ padding: 0 50px;}
 article p{
     line-height: 34px;
     margin: 35px 0;

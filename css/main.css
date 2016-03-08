@@ -233,8 +233,8 @@ header{ height: 82px;}
 .mq_notice .noticeTip a:hover{ text-decoration:underline; }
 .mcNotice{
 	float: left;
-    margin-left: 30px;
     font-size: 18px;
+    width: 88%;
 }
 .mcNotice p{
     line-height: 50px;

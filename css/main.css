@@ -1684,10 +1684,17 @@ i.fs_arrow_blue_right{ background-position: -104px 0; left: 1200px;}
 }
 .newsTown{ margin-bottom: 24px;}
 
-.noticeList li{ padding-left: 15px; line-height: 50px; }
-.noticeList li a{ color: #2a2a2a; }
-.noticeList li a:hover{ color: #007ec6; }
-.noticeList li span{ float:right; color: #999; }
+.noticeList li{ padding-left: 15px; line-height: 50px;}
+.noticeList li a{
+    color: #2a2a2a;
+    width: 650px;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.noticeList li a:hover{ color: #007ec6;}
+.noticeList li span{ float:right; color: #999;}
 
 .outnw{ color: #0075cb;}
 .innw{ color: #df5640;}

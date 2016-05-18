@@ -644,13 +644,14 @@ function Trim(str){   //去掉所有空格
 //历史查询和今日查询
 function bzAll(){
     $.ajax({
-        url: 'http://niot-analysis.cniotroot.cn:8888/collect?t=jsonp',
+        url: 'http://14.23.62.178:81/jsonp?param={"type":"base"}&method=code.base.info&callback=jsonp',//'http://niot-analysis.cniotroot.cn:8888/collect?t=jsonp',
         type: "get",
 		dataType:'jsonp',
 		jsonpCallback:'funcname',
         success: function(data){
-            $('#bz_all').html(data.total);
-            $('#bz_today').html(data.today);
+            $('#bz_cir').html(data.res.cirNum);
+            $('#bz_all').html(data.res.queNum);
+            $('#bz_today').html(data.res.dailyNum);
         },
         error: function(data){
             console.log("error");

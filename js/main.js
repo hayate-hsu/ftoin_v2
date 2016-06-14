@@ -651,7 +651,7 @@ function bzAll(){
         success: function(data){
             $('#bz_cir').html(data.res.cirNum);
             $('#bz_all').html(data.res.queNum);
-            $('#bz_today').html(data.res.dailyNum);
+            //$('#bz_today').html(data.res.dailyNum);
         },
         error: function(data){
             console.log("error");

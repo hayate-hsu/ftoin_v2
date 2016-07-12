@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:wb="http://open.weibo.com/wb">
+<html>
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta property="wb:webmaster" content="196ca99c76d3ffd2" />
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
     <title>关于我们-NIOT广州中国科学院计算机网络信息中心</title>
     <link rel="stylesheet" href="/css/main.min.css" />
 </head>
@@ -118,7 +119,7 @@
                     </ul>
                 </div>
                 <div class="us_map">
-                    <div id="map"></div>
+                    <!--<div id="map"></div>-->
                 </div>
             </div>
         </div>
@@ -132,23 +133,22 @@
 
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/main.min.js"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DTYd4ADmSRRQ6k4EtpSQp2SL"></script>
-    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=57136132" type="text/javascript" charset="utf-8"></script>
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DTYd4ADmSRRQ6k4EtpSQp2SL"></script>-->
 
-    <script type="text/javascript">
-        var map = new BMap.Map("map");
-        var point = new BMap.Point(113.611991, 22.756709);
-        map.centerAndZoom(point, 18);
-//        map.setCurrentCity("广州");
-        map.enableScrollWheelZoom(true);
+    <!--<script type="text/javascript">-->
+        <!--var map = new BMap.Map("map");-->
+        <!--var point = new BMap.Point(113.611991, 22.756709);-->
+        <!--map.centerAndZoom(point, 18);-->
+<!--//        map.setCurrentCity("广州");-->
+        <!--map.enableScrollWheelZoom(true);-->
 
-        var op = new BMap.Point(113.6175,22.755539);     /*  113.61392,22.755667 */
-        var marker = new BMap.Marker(op);
-        map.addOverlay(marker);
+        <!--var op = new BMap.Point(113.6175,22.755539);     /*  113.61392,22.755667 */-->
+        <!--var marker = new BMap.Marker(op);-->
+        <!--map.addOverlay(marker);-->
 
-//        map.addEventListener("click", function(e){
-//            alert(e.point.lng + ", " + e.point.lat);
-//        });
-    </script>
+<!--//        map.addEventListener("click", function(e){-->
+<!--//            alert(e.point.lng + ", " + e.point.lat);-->
+<!--//        });-->
+    <!--</script>-->
 </body>
 </html>

@@ -1124,6 +1124,7 @@ footer p{
 }
 .zckj00{
     background: url("../images/zckj001.jpg") bottom center no-repeat;
+    height: 824px;
 }
 .zckj00 .news{
     width: 932px;
@@ -1163,7 +1164,7 @@ footer p{
     color: #fff;
     display: block;
     position: absolute;
-    top: 300px;
+    top: 394px;
     left: 209px;
     line-height: 56px;
     font-size: 20px;

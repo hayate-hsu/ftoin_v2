@@ -644,7 +644,7 @@ function Trim(str){   //去掉所有空格
 //历史查询和今日查询
 function bzAll(){
     $.ajax({
-        url: 'http://14.23.62.178:81/jsonp?param={"type":"base"}&method=code.base.info&callback=jsonp',//'http://niot-analysis.cniotroot.cn:8888/collect?t=jsonp',
+        url: 'https://dasta.cniotroot.cn:881/jsonp?param={"type":"base"}&method=code.base.info&callback=jsonp',//'http://niot-analysis.cniotroot.cn:8888/collect?t=jsonp',
         type: "get",
 		dataType:'jsonp',
 		jsonpCallback:'funcname',

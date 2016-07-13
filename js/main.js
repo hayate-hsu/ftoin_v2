@@ -264,7 +264,7 @@
             console.log(obj);
 
             $.ajax({
-               url: 'http://www.cniotroot.cn/project',
+               url: '//project',
                data: obj,
                type: "post",
                beforeSend: function(){
@@ -286,7 +286,7 @@
         }
     });
 
-    $(".spfilebtn").wrap("<form action='http://www.cniotroot.cn/file' method='post' enctype='multipart/form-data'></form>");
+    $(".spfilebtn").wrap("<form action='//file' method='post' enctype='multipart/form-data'></form>");
     $('.spfilebtn').change(function(){
         var $form = $('form');
         var options  = {

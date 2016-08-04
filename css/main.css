@@ -59,6 +59,7 @@ header{ height: 82px;}
 .fstnav{
     float: right;
     margin-top: 15px;
+    cursor: default;
 }
 .fstnav li{
     float: left;
@@ -72,6 +73,10 @@ header{ height: 82px;}
 }
 .fstnav a:hover{
     color: #00ade7;
+}
+.fstnav a.dis, .fstnav a.dis:hover{
+    color: #ccc;
+    cursor: default;
 }
 .fstnav a.on{
     color: #00ade7;

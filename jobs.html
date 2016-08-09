@@ -1,95 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="wb:webmaster" content="196ca99c76d3ffd2" />
-    <title>人才招聘-NIOT广州中国科学院计算机网络信息中心</title>
-    <link rel="stylesheet" href="/css/main.min.css" />
-</head>
+## 人才招聘
+<%inherit file="base.html" />
 
-<body>
-    <!--页头-->
-	<%include file="include/header.html"/>
-    
-    <!--banner-->
-	<%include file="include/banner.html"/>    
+<%!
+    title=u"人才招聘";
+%>
 
-    <section class="jobs_wrapper">
-        <div class="jobs_left">
-            <div class="jobs">
-                <div class="tt_h3">职位</div>
-                <ul>
-                % for job in jobs:
-                    <li class="li_${job['id']}">${job['title']}</li>
-                % endfor
-                </ul>
-            </div>
-            <div class="address">
-                <div class="tt_h3">联系方式</div>
-                <ul>
-                    <li><b>电话：</b>020-39393309</li>
-                    <li><b>地址：</b>广东省广州市南沙区环市大道南2号南沙资讯科技园科技楼（港科大研究院）三楼</li>
-                    <li><b>简历发送至邮箱：</b><br>zhaopin@cnicg.cn<br/>（请在标题中注明所应聘职位）</li>
-                    <li><b>招聘二维码：</b>NIOT-zhaopin<img src="/images/hrewm.jpg" alt="Niot招聘二维码" /></li>
-                </ul>
-            </div>
-        </div>
-        <div class="jobs_right">
+<!--banner-->
+<%include file="include/banner.html"/>
+
+<section class="jobs_wrapper">
+    <div class="jobs_left">
+        <div class="jobs">
+            <div class="tt_h3">职位</div>
+            <ul>
             % for job in jobs:
-                <div class="div_${job['id']}" style="display:none;">
-                    <div class="jobs_name">${job['subtitle']}</div>
-                    <span class="line"></span>
-                    <div class="jobs_content">${job['content']}</div>
-                    % if job['image']:
-                    <div class="jobs_file">附件：<a target="_blank" href="${cms}${job['image']}">${job['image'][11:]}</a></div>
-                    % endif
-                </div>
-           % endfor
+                <li class="li_${job['id']}">${job['title']}</li>
+            % endfor
+            </ul>
         </div>
-    </section>
-    
-    <!--页尾-->
-	<%include file="include/footer.html"/>
-    
-    <!--页面右侧浮动公众号、客服电话、回顶部-->
-	<%include file="include/aside.html"/>
-    
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/main.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-			//根据职位id显示相应内容
-			function showJob(id){
-				if(id){
-					$(".div_"+id).show().siblings().hide();
-					$(".li_"+id).addClass('actived').siblings().removeClass('actived');
-				}
-				else{	//默认显示第一条
-					$('.jobs_right div:first').show().siblings().hide();
-					$('.jobs ul li:first').addClass('actived').siblings().removeClass('actived');
-				}
-			}showJob();
-			
-			//获取url中的职位id
-			function getUrlId(){
-				var re = /#+[a-zA-Z0-9]*/;
-				var id = window.location.href.match(re);	//匹配#id
-				if(id)showJob(id[0].substr(1));
-			}getUrlId();
-			
-            //切换招聘职位
-            $(document).on('click', '.jobs li', function(){
-				if($(this).hasClass("actived")){return false;}
-                var id = $(this).attr('class').substr(3);
-				window.history.pushState(null,null,"#"+id);	//插入历史记录
-				showJob(id);
-            });
-			
-			//切换历史记录
-			window.onpopstate = function(){ getUrlId(); }
+        <div class="address">
+            <div class="tt_h3">联系方式</div>
+            <ul>
+                <li><b>电话：</b>020-39393309</li>
+                <li><b>地址：</b>广东省广州市南沙区环市大道南2号南沙资讯科技园科技楼（港科大研究院）三楼</li>
+                <li><b>简历发送至邮箱：</b><br>zhaopin@cnicg.cn<br/>（请在标题中注明所应聘职位）</li>
+                <li><b>招聘二维码：</b>NIOT-zhaopin<img src="/images/hrewm.jpg" alt="Niot招聘二维码" /></li>
+            </ul>
+        </div>
+    </div>
+    <div class="jobs_right">
+        % for job in jobs:
+            <div class="div_${job['id']}" style="display:none;">
+                <div class="jobs_name">${job['subtitle']}</div>
+                <span class="line"></span>
+                <div class="jobs_content">${job['content']}</div>
+                % if job['image']:
+                <div class="jobs_file">附件：<a target="_blank" href="${cms}${job['image']}">${job['image'][11:]}</a></div>
+                % endif
+            </div>
+       % endfor
+    </div>
+</section>
+
+<%block name="jscode">
+<script type="text/javascript">
+    $(function(){
+        //根据职位id显示相应内容
+        function showJob(id){
+            if(id){
+                $(".div_"+id).show().siblings().hide();
+                $(".li_"+id).addClass('actived').siblings().removeClass('actived');
+            }
+            else{	//默认显示第一条
+                $('.jobs_right div:first').show().siblings().hide();
+                $('.jobs ul li:first').addClass('actived').siblings().removeClass('actived');
+            }
+        }showJob();
+
+        //获取url中的职位id
+        function getUrlId(){
+            var re = /#+[a-zA-Z0-9]*/;
+            var id = window.location.href.match(re);	//匹配#id
+            if(id)showJob(id[0].substr(1));
+        }getUrlId();
+
+        //切换招聘职位
+        $(document).on('click', '.jobs li', function(){
+            if($(this).hasClass("actived")){return false;}
+            var id = $(this).attr('class').substr(3);
+            window.history.pushState(null,null,"#"+id);	//插入历史记录
+            showJob(id);
         });
-    </script>
-</body>
-</html>
+
+        //切换历史记录
+        window.onpopstate = function(){ getUrlId(); }
+    });
+</script>
+</%block>

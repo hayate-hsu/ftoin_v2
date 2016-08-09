@@ -45,7 +45,7 @@ input,textarea{ font-family: "microsoft yahei", Arial, Helvetica, sans-serif;}
 .kb_modal i{ display: block; text-indent: -9999px;}
 
 /************header***************/
-.ouheader{}
+.wapHeader{display: none;}
 header{ height: 82px;}
 .logo{
     background: url("../images/logo.png") no-repeat;
@@ -1838,7 +1838,7 @@ i.fs_arrow_blue_right{ background-position: -104px 0; left: 1200px;}
     margin-left: 10px;
 }
 article{ margin: 35px 0 80px;}
-article h2{  font-size: 30px;}
+article h2{  font-size: 30px; text-align: justify;}
 article .contentTips{
     font-size: 14px;
     color: #666;
@@ -1850,6 +1850,7 @@ article .bdSign{ float: right;}
 article p{
     line-height: 34px;
     margin: 35px 0;
+    text-align: justify;
 }
 article p img{
     width: 628px;
@@ -4003,16 +4004,54 @@ span.bdzo{ background-position: -1000px -200px;}
 /* 2016 new year all */
 
 @media screen and (max-width:1280px){
-    header, .secnav, section, footer{
+    .ouheader, .secnav, section, footer, .wrapper{
         width: 1280px;
     }
-    .techInfy header, .suppInfy header, .cloudInfo header, .corInfy header{
-        width: 1170px;
+}
+
+@media (max-device-width: 736px) {
+    body{width: 100%;}
+    .wap{
+        display: none;
     }
-    .scNews{
-        left: 905px;
+    .wrapper, .nw_wrapper, .nwLeft{
+        width: 100%;
     }
-    .scNewsF, .scNewsC{
-        left: 1228px;
+    .wapHeader{
+        display: block;
+        box-sizing: border-box;
+        padding: 20px 24px 0;
+        width: 100%;
+    }
+    .wapHeader a{
+        display: block;
+        width: 33%;
+    }
+    .wapHeader img{
+        width: 100%;
+        display: block;
+    }
+    .nw_wrapper{
+        box-sizing: border-box;
+        padding: 0 24px;
+        margin: 0;
+    }
+    article .contentTips{
+        padding: 10px 0;
+    }
+    article{
+        margin: 35px 0 35px;
+    }
+    article h2{
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    article p{
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+    article p img{
+        width: 100%;
     }
 }

@@ -1,158 +1,175 @@
-## 公共服务
-<%inherit file="base.html" />
+<!DOCTYPE html>
+<!--<html xmlns:wb="http://open.weibo.com/wb">-->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="wb:webmaster" content="196ca99c76d3ffd2" />
+    <title>公共服务-NIOT广州中国科学院计算机网络信息中心</title>
+    <link rel="stylesheet" href="/css/main.min.css" />
+</head>
 
-<%!
-    title=u"公共服务";
-%>
+<body>
+    <!--页头-->
+	<%include file="include/header.html"/>
 
-<div class="gz_body">
-    <div class="gz_wrapper">
-        <div class="gz_left">
-            <div class="tt_h3">联系我们</div>
-            <div class="gz_company">
-                <div>
-                    <img src="/images/gz_logo.png" width="178" height="78" />
-                    <span>中国地区统一咨询服务热线</span>
-                    <span><b>020-39393309</b></span>
+    <div class="gz_body">
+        <div class="gz_wrapper">
+            <div class="gz_left">
+                <div class="tt_h3">联系我们</div>
+                <div class="gz_company">
+                    <div>
+                        <img src="/images/gz_logo.png" width="178" height="78" />
+                        <span>中国地区统一咨询服务热线</span>
+                        <span><b>020-39393309</b></span>
+                    </div>
+                    <ul>
+                        <li><label>地址：</label><span>广东省广州市南沙区环市大道南2号南沙资讯科技园香港科大霍英东研究院科技楼三楼</span></li>
+                        <li><label>邮箱：</label><span>support@cnicg.cn</span></li>
+                        <li><label>微信：</label><span>cnic-niot</span></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><label>地址：</label><span>广东省广州市南沙区环市大道南2号南沙资讯科技园香港科大霍英东研究院科技楼三楼</span></li>
-                    <li><label>邮箱：</label><span>support@cnicg.cn</span></li>
-                    <li><label>微信：</label><span>cnic-niot</span></li>
-                </ul>
-            </div>
-            <div class="gz_product">
-                <div class="gz_pd">
-                    <p>以下产品，您有任何反馈或建议，欢迎与我们联系。有您的支持，我们的产品才能更完善！</p>
-                    <div class="gz_box">
-                        <div>
-                            <img src="/images/bidong_s.jpg" />
-                            <span>壁咚Wifi</span>
+                <div class="gz_product">
+                    <div class="gz_pd">
+                        <p>以下产品，您有任何反馈或建议，欢迎与我们联系。有您的支持，我们的产品才能更完善！</p>
+                        <div class="gz_box">
+                            <div>
+                                <img src="/images/bidong_s.jpg" />
+                                <span>壁咚Wifi</span>
+                            </div>
+                            <ul>
+                                <li>Q Q：157881423</li>
+                                <li>电话：18688859064</li>
+                                <li>邮箱：bidongwifi@cnicg.cn</li>
+                                <li>微信：bidongwlan</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Q Q：157881423</li>
-                            <li>电话：18688859064</li>
-                            <li>邮箱：bidongwifi@cnicg.cn</li>
-                            <li>微信：bidongwlan</li>
-                        </ul>
-                    </div>
-                    <div class="gz_box">
-                        <div>
-                            <img src="/images/saoma_s.jpg" />
-                            <span>扫码兽</span>
+                        <div class="gz_box">
+                            <div>
+                                <img src="/images/saoma_s.jpg" />
+                                <span>扫码兽</span>
+                            </div>
+                            <ul>
+                                <li>用户反馈QQ群：399947114</li>
+                                <li>电话：13802412430</li>
+                                <li>邮箱：saomashou@cnicg.cn</li>
+                                <li>微信：saomashou</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>用户反馈QQ群：399947114</li>
-                            <li>电话：13802412430</li>
-                            <li>邮箱：saomashou@cnicg.cn</li>
-                            <li>微信：saomashou</li>
-                        </ul>
-                    </div>
-                    <div class="gz_box">
-                        <div>
-                            <img src="/images/mosi_s.jpg" />
-                            <span>魔饰</span>
+                        <div class="gz_box">
+                            <div>
+                                <img src="/images/mosi_s.jpg" />
+                                <span>魔饰</span>
+                            </div>
+                            <ul>
+                                <li>Q Q：2318141400</li>
+                                <li>电话：13802412430</li>
+                                <li>邮箱：mosign@cnicg.cn</li>
+                                <li>微信：mosign-niot</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Q Q：2318141400</li>
-                            <li>电话：13802412430</li>
-                            <li>邮箱：mosign@cnicg.cn</li>
-                            <li>微信：mosign-niot</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="gz_contact">
-                <img src="/images/gzfw001.png" width="751" height="106" style="display: block;" />
-                <div class="gz_pd">
-                    <p>需求支持与合作，请联系：</p>
-                    <div class="gz_text">
-                        <div class="tt_h4">创业服务</div>
-                        <ul>
-                            <li>物联网项目需求资金技术，投资人希望找到好项目，请联系：</li>
-                            <li>Q Q：157881423</li>
-                            <li>电话：18688859064</li>
-                        </ul>
-                    </div>
-                    <div class="gz_line"></div>
-                    <div class="gz_text">
-                        <div class="tt_h4">科技合作</div>
-                        <ul>
-                            <li>科技合作与交流，请联系：</li>
-                            <li>Q Q：272956059</li>
-                            <li>电话：18565158635</li>
-                        </ul>
-                    </div>
-                    <div class="gz_line"></div>
-                    <div class="gz_text">
-                        <div class="tt_h4">商务事务</div>
-                        <ul>
-                            <li>如果您希望和NIOT进行战略合作或多业务合作，请联系：</li>
-                            <li>Q Q：827833815</li>
-                            <li>电话：13802412430</li>
-                        </ul>
                     </div>
                 </div>
+                <div class="gz_contact">
+                    <img src="/images/gzfw001.png" width="751" height="106" style="display: block;" />
+                    <div class="gz_pd">
+                        <p>需求支持与合作，请联系：</p>
+                        <div class="gz_text">
+                            <div class="tt_h4">创业服务</div>
+                            <ul>
+                                <li>物联网项目需求资金技术，投资人希望找到好项目，请联系：</li>
+                                <li>Q Q：157881423</li>
+                                <li>电话：18688859064</li>
+                            </ul>
+                        </div>
+                        <div class="gz_line"></div>
+                        <div class="gz_text">
+                            <div class="tt_h4">科技合作</div>
+                            <ul>
+                                <li>科技合作与交流，请联系：</li>
+                                <li>Q Q：272956059</li>
+                                <li>电话：18565158635</li>
+                            </ul>
+                        </div>
+                        <div class="gz_line"></div>
+                        <div class="gz_text">
+                            <div class="tt_h4">商务事务</div>
+                            <ul>
+                                <li>如果您希望和NIOT进行战略合作或多业务合作，请联系：</li>
+                                <li>Q Q：827833815</li>
+                                <li>电话：13802412430</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="gz_right">
-            <div class="tt_h3">帮助中心：</div>
-            <div class="gz_help">
-                <ul>
-                    <li>
-                        <p>什么是国家物联网标识管理公共服务平台？</p>
-                        <div class="gz_note">
-                            <i></i><div><span>国家物联网标识管理公共服务平台，是由中国科学院计算机网络信息中心牵头，联合工业和信息化部电子科学技术情报研究所、工业和信息化部电信研究院、中国物品编码中心三家参与单位建立的物联网标识统一管理和公共服务平台。国家平台负责物联网标识的编码、分发、注册、查询以及搜索等贯穿物联网标识产生和应用全过程的管理系统。国家平台是以标识管理系统为基础面向物联网各个行业，多种平台提供标识注册、查询和搜索等公共服务的物联网基础支撑平台。</span></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>国家物联网标识管理公共服务平台系统结构？</p>
-                        <div class="gz_note">
-                            <i></i><div><span>国家物联网标识管理公共服务平台涵盖物联网标识编码管理体系的注册系统、查询系统和搜索系统等三大子系统，是物联网标识的编码、分发、注册、查询以及搜索发现等贯穿物联网标识产生和应用全过程的管理系统。其物联网标识编码管理体系架构包括物联网统一标识编码体系和物联网统一标识服务体系。物联网统一标识编码体系针对各种异构标识编码，通过域名管理域的形式，在标识服务层面实现编码的统一；物联网统一标识服务体系包括标识解析器（实现物联网标识的统一服务）、基于DNS架构的统一标识服务体系、支持平等互通的对等解析架构。</span></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>国家物联网标识管理公共服务平台使用方法？</p>
-                        <div class="gz_note"><i></i><div><span>国家物联网标识管理公共服务平台为用户提供访问物联网资源的统一入口，包括两种交互方式：基于浏览器的交互方式和基于统一API接口的交互方式。其中，基于浏览器的交互方式，物联网用户可以通过普通的浏览器（IE、Firefox等）访问本平台下的各种物联网资源；基于统一API接口的交互方式，可以开发出基于统一信息表达方式的物联网客户端，同时任意用户可以参与物联网的业务创新，通过统一API开发应用程序，利用物联网中各种资源，为物联网用户提供丰富多样的应用。</span><span>具体使用方法及详细联系方式请查阅《业务合作方式》。</span></div></div>
-                    </li>
-                    <li>
-                        <p>国家物联网标识管理公共服务平台前景？</p>
-                        <div class="gz_note"><i></i><div><span>基于物联网标识技术打通互相独立的信息平台关节，实现以物联网标识管理系统为基础有效支持各种不同标识数据及编码体系，提供跨行业、跨平台、跨领域互联互通；实现基于标识管理的数据共享及应用；实现跨行业、跨平台、跨领域的规模化发展，打造万亿级物联网生态圈。</span></div></div>
-                    </li>
-                    <li>
-                        <p>为什么要注册国家物联网标识管理公共服务平台账号？</p>
-                        <div class="gz_note"><i></i><div><span>如果您要在使用国家物联网标识管理公共服务平台的业务，请您先在国家物联网标识管理公共服务平台上注册一级物联网标识。</span></div></div>
-                    </li>
-                    <li>
-                        <p>如何注册？</p>
-                        <div class="gz_note"><img src="/images/gz_register.png" /></div>
-                    </li>
-                    <li>
-                        <p>填写注册时填写相关信息中要注意哪些问题？</p>
-                        <div class="gz_note"><i></i><div><span>（1）请您一定要按输入框的提示要求来填写您的相关信息。</span><span>（2）请您注意一定要填写您有效的邮件地址，否则您会无法收到我们给您的各类通知。</span><span>（3）目前用户密码限制为“可包含字母（区分大小写）、数字，6-30个字符”</span></div></div>
-                    </li>
-                    <li>
-                        <p>如何登陆平台？</p>
-                        <div class="gz_note"><i></i><div><span>请您先访问您注册的一级物联网标识平台主页xxx.cniotroot.cn，然后点击“登陆”，输入您的账号和密码就可以登录您所注册的一级物联网标识平台了。
+            <div class="gz_right">
+                <div class="tt_h3">帮助中心：</div>
+                <div class="gz_help">
+                    <ul>
+                        <li>
+                            <p>什么是国家物联网标识管理公共服务平台？</p>
+                            <div class="gz_note">
+                                <i></i><div><span>国家物联网标识管理公共服务平台，是由中国科学院计算机网络信息中心牵头，联合工业和信息化部电子科学技术情报研究所、工业和信息化部电信研究院、中国物品编码中心三家参与单位建立的物联网标识统一管理和公共服务平台。国家平台负责物联网标识的编码、分发、注册、查询以及搜索等贯穿物联网标识产生和应用全过程的管理系统。国家平台是以标识管理系统为基础面向物联网各个行业，多种平台提供标识注册、查询和搜索等公共服务的物联网基础支撑平台。</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>国家物联网标识管理公共服务平台系统结构？</p>
+                            <div class="gz_note">
+                                <i></i><div><span>国家物联网标识管理公共服务平台涵盖物联网标识编码管理体系的注册系统、查询系统和搜索系统等三大子系统，是物联网标识的编码、分发、注册、查询以及搜索发现等贯穿物联网标识产生和应用全过程的管理系统。其物联网标识编码管理体系架构包括物联网统一标识编码体系和物联网统一标识服务体系。物联网统一标识编码体系针对各种异构标识编码，通过域名管理域的形式，在标识服务层面实现编码的统一；物联网统一标识服务体系包括标识解析器（实现物联网标识的统一服务）、基于DNS架构的统一标识服务体系、支持平等互通的对等解析架构。</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>国家物联网标识管理公共服务平台使用方法？</p>
+                            <div class="gz_note"><i></i><div><span>国家物联网标识管理公共服务平台为用户提供访问物联网资源的统一入口，包括两种交互方式：基于浏览器的交互方式和基于统一API接口的交互方式。其中，基于浏览器的交互方式，物联网用户可以通过普通的浏览器（IE、Firefox等）访问本平台下的各种物联网资源；基于统一API接口的交互方式，可以开发出基于统一信息表达方式的物联网客户端，同时任意用户可以参与物联网的业务创新，通过统一API开发应用程序，利用物联网中各种资源，为物联网用户提供丰富多样的应用。</span><span>具体使用方法及详细联系方式请查阅《业务合作方式》。</span></div></div>
+                        </li>
+                        <li>
+                            <p>国家物联网标识管理公共服务平台前景？</p>
+                            <div class="gz_note"><i></i><div><span>基于物联网标识技术打通互相独立的信息平台关节，实现以物联网标识管理系统为基础有效支持各种不同标识数据及编码体系，提供跨行业、跨平台、跨领域互联互通；实现基于标识管理的数据共享及应用；实现跨行业、跨平台、跨领域的规模化发展，打造万亿级物联网生态圈。</span></div></div>
+                        </li>
+                        <li>
+                            <p>为什么要注册国家物联网标识管理公共服务平台账号？</p>
+                            <div class="gz_note"><i></i><div><span>如果您要在使用国家物联网标识管理公共服务平台的业务，请您先在国家物联网标识管理公共服务平台上注册一级物联网标识。</span></div></div>
+                        </li>
+                        <li>
+                            <p>如何注册？</p>
+                            <div class="gz_note"><img src="/images/gz_register.png" /></div>
+                        </li>
+                        <li>
+                            <p>填写注册时填写相关信息中要注意哪些问题？</p>
+                            <div class="gz_note"><i></i><div><span>（1）请您一定要按输入框的提示要求来填写您的相关信息。</span><span>（2）请您注意一定要填写您有效的邮件地址，否则您会无法收到我们给您的各类通知。</span><span>（3）目前用户密码限制为“可包含字母（区分大小写）、数字，6-30个字符”</span></div></div>
+                        </li>
+                        <li>
+                            <p>如何登陆平台？</p>
+                            <div class="gz_note"><i></i><div><span>请您先访问您注册的一级物联网标识平台主页xxx.cniotroot.cn，然后点击“登陆”，输入您的账号和密码就可以登录您所注册的一级物联网标识平台了。
 </span></div></div>
-                    </li>
-                    <li>
-                        <p>我该如何找回我的登陆密码？</p>
-                        <div class="gz_note"><img src="/images/gz_password.png" /></div>
-                    </li>
-                    <li>
-                        <p>如何升级成为授权注册服务商？</p>
-                        <div class="gz_note"><i></i><div><span>（1）请您提供贵司的介绍、资质证明文件（营业执照、税务登记证、组织结构代码证）、服务领域及用途说明，发送至平台服务邮箱：support@cnicg.cn</span><span>邮件主题：申请授权注册服务商资质</span><span>（2）平台将会有专员负责跟进对接处理。</span><span>详细联系方式：</span><span>联系邮箱：support@cnicg.cn</span><span>联系电话：400-806-0373</span><span>联系地址：中国（广东）南沙自贸区环市大道南2号南沙咨询科技园软件楼203</span><span>邮编：511458</span></div></div>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <p>我该如何找回我的登陆密码？</p>
+                            <div class="gz_note"><img src="/images/gz_password.png" /></div>
+                        </li>
+                        <li>
+                            <p>如何升级成为授权注册服务商？</p>
+                            <div class="gz_note"><i></i><div><span>（1）请您提供贵司的介绍、资质证明文件（营业执照、税务登记证、组织结构代码证）、服务领域及用途说明，发送至平台服务邮箱：support@cnicg.cn</span><span>邮件主题：申请授权注册服务商资质</span><span>（2）平台将会有专员负责跟进对接处理。</span><span>详细联系方式：</span><span>联系邮箱：support@cnicg.cn</span><span>联系电话：400-806-0373</span><span>联系地址：中国（广东）南沙自贸区环市大道南2号南沙咨询科技园软件楼203</span><span>邮编：511458</span></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <!--<div class="gz_wb">-->
+                    <!--<wb:comments url="http://www.cniotroot.cn/gzfw.html" height="200" width="auto" appkey="57136132" border="n" fontsize="14" color="aad3ea,f1f1f1,4c4c4c,5093d5,cccccc,b1dcff" ></wb:comments>-->
+                <!--</div>-->
             </div>
-            <!--<div class="gz_wb">-->
-                <!--<wb:comments url="http://www.cniotroot.cn/gzfw.html" height="200" width="auto" appkey="57136132" border="n" fontsize="14" color="aad3ea,f1f1f1,4c4c4c,5093d5,cccccc,b1dcff" ></wb:comments>-->
-            <!--</div>-->
         </div>
     </div>
-</div>
 
-<%block name="jscode">
-<!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=57136132" type="text/javascript" charset="utf-8"></script>-->
-</%block>
+    <!--页尾-->
+	<%include file="include/footer.html"/>
+    
+    <!--页面右侧浮动公众号、客服电话、回顶部-->
+	<%include file="include/aside.html"/>
+    
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/main.min.js"></script>
+    <!--<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=57136132" type="text/javascript" charset="utf-8"></script>-->
+</body>
+</html>

@@ -1,6 +1,5 @@
 /**
  * Created by JavieChan on 2015/5/29.
- * Updated by JavieChan on 2016/8/5.
  */
 ;$(function(){
     //返回
@@ -634,6 +633,7 @@
     //    }, 5500);
     //    sessionStorage.setItem('nytime', true);
     //}
+
 });
 
 function Trim(str){   //去掉所有空格
@@ -707,22 +707,4 @@ function unshake(times){
         return false;
     }
     setTimeout("shake("+times+")", 150);
-}
-
-function mediaResize(){
-    var w = window.screen.width;
-    if(w<=736){
-        if(!document.getElementById('viewport')){
-            var oMeta = document.createElement('meta');
-            oMeta.name = 'viewport';
-            oMeta.id = 'viewport';
-            oMeta.content = 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no';
-            document.getElementsByTagName('head')[0].appendChild(oMeta);
-        }
-    }else{
-        if(document.getElementById('viewport')){
-            var id = document.getElementById('viewport');
-            document.head.removeChild(id);
-        }
-    }
 }

@@ -1,11 +1,18 @@
-## 新闻资讯
-<%inherit file="base.html" />
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="wb:webmaster" content="196ca99c76d3ffd2" />
+    <title>新闻资讯-广州中国科学院计算机网络信息中心</title>
+    <link rel="stylesheet" href="/css/main.min.css" />
+</head>
 
-<%!
-    title=u"新闻资讯";
-%>
+<body>
+    <!--页头-->
+	<%include file="include/header.html"/>
 
-<div class="wrapper">
     <div class="nw_wrapper">
         <div class="nwLeft">
             <div class="bread">
@@ -13,33 +20,40 @@
             </div>
             <div class="newsTown">
                 % for index,message in enumerate(news):
-                    % if not index:
+                	% if not index:
                         <div class="nwBanner">
                             <a href="/newsdetail.html?id=${message['id']}"><img src="${cms}${message['image']}" /></a>
                             <span>${message['title']}</span>
                         </div>
                     % else:
-                        <div class="newsGroup">
-                            <a href="/newsdetail.html?id=${message['id']}"><img src="${cms}${message['image']}" width="260" height="156" /></a>
+                    	<div class="newsGroup">
+                        	<a href="/newsdetail.html?id=${message['id']}"><img src="${cms}${message['image']}" width="260" height="156" /></a>
                             <div class="newsbox">
-                                <h3><a href="/newsdetail.html?id=${message['id']}">${message['title']}</a></h3>
+                            	<h3><a href="/newsdetail.html?id=${message['id']}">${message['title']}</a></h3>
                                 <p>${message['subtitle'][0:70]}</p>
                                 <span class="nwTime">${message['ctime'].strftime('%Y-%m-%d')}</span>
                             </div>
-                        </div>
+                        </div>                    
                     % endif
-                % endfor
+                % endfor                 
             </div>
             <div class="newsPages">
                 <button class="more">加载更多</button>
             </div>
         </div>
-
+        
         <!--列表页右边栏-->
         <%include file="include/nwRight.html"/>
     </div>
-</div>
-
-<%block name="jscode">
-<script type="text/javascript" src="/js/msgload.js"></script>
-</%block>
+    
+    <!--页尾-->
+	<%include file="include/footer.html"/>
+    
+    <!--页面右侧浮动公众号、客服电话、回顶部-->
+	<%include file="include/aside.html"/>
+    
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/main.min.js"></script>
+    <script type="text/javascript" src="/js/msgload.js"></script>
+</body>
+</html>

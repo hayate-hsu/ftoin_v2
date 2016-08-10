@@ -4003,7 +4003,7 @@ span.bdzo{ background-position: -1000px -200px;}
 /*}*/
 /* 2016 new year all */
 
-.wapHeader, .ewmFocus{display: none;}
+.wapHeader, .ewmFocus, .wapFooter{display: none;}
 
 @media screen and (max-width:1280px){
     .ouheader, .secnav, section, footer, .wrapper{
@@ -4024,14 +4024,30 @@ span.bdzo{ background-position: -1000px -200px;}
         box-sizing: border-box;
         padding: 20px 24px 0;
         width: 100%;
+        position: relative;
     }
-    .wapHeader a{
+    .wapHeader .wapLogoLink{
         display: block;
-        width: 33%;
+        width: 108px;
+        vertical-align: middle;
     }
     .wapHeader img{
         width: 100%;
         display: block;
+    }
+    .wapHeader .wapNewsLink{
+        box-sizing: border-box;
+        border: 1px solid #90bddc;
+        color: #488fc7;
+        width: 85px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        border-radius: 4px;
+        vertical-align: middle;
+        position: absolute;
+        right: 24px;
+        top: 20px;
     }
     .nw_wrapper{
         box-sizing: border-box;
@@ -4042,7 +4058,7 @@ span.bdzo{ background-position: -1000px -200px;}
         padding: 10px 0;
     }
     article{
-        margin: 35px 0 35px;
+        margin: 25px 0 15px;
     }
     article h2{
         font-size: 24px;
@@ -4056,6 +4072,9 @@ span.bdzo{ background-position: -1000px -200px;}
     article p img{
         width: 100%;
     }
+    article .bdTime{
+        font-size: 12px;
+    }
     .ewmFocus{
         display: block;
     }
@@ -4063,5 +4082,17 @@ span.bdzo{ background-position: -1000px -200px;}
         width: 172px;
         margin: 0 auto 20px;
         display: block;
+    }
+    .wapFooter{
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        background: #4a8fc8;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+    }
+    .wapFooter span{
+        margin: 0 10px;
     }
 }

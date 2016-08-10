@@ -3,41 +3,56 @@
 
 <%
     title=_message['title'];
-    wap='wap';
+%>
+<%!
+    wap="wap";
 %>
 
-<div class="nw_wrapper">
-    <div class="nwLeft">
-        <div class="bread">
-            <input type="button" class="arrow arrowLeft" value="返回" id="backUrl" /><a href="/news.html">新闻资讯</a> / <span>${_message['title']}</span>
-        </div>
-        <article>
-            <h2>${_message['title']}</h2>
-                <div class="contentTips"><span class="bdTime">${_message['ctime'].strftime('%Y-%m-%d')}</span><span class="bdSign"><b>标签：</b>${_message['labels']}</span></div>
-            <div class="content">${_message['content']}</div>
-        </article>
-    </div>
-    <div class="nwRight wap">
-        <div class="nwAside">
-            <div class="tt_h4">新闻推荐<a href="/news.html">more+</a></div>
-            <div class="ctdt">
-                % for message in news:
-                    <div class="ctdt_group"><div class="ctdt_box">
-                        <a href="/newsdetail.html?id=${message['id']}"><img src="${cms}${message['image']}" alt="${message['title']}" width="130" height="78" /></a>
-                        <p><a href="/newsdetail.html?id=${message['id']}">${message['title']}</a></p>
-                    </div></div>
-                % endfor
+<%block name="wapHeader">
+<div class="wapHeader">
+    <a href="/">
+        <img src="/images/cnicg_logo.png" />
+    </a>
+</div>
+</%block>
+
+<div class="wrapper">
+    <div class="nw_wrapper">
+        <div class="nwLeft">
+            <div class="bread wap">
+                <input type="button" class="arrow arrowLeft" value="返回" id="backUrl" /><a href="/news.html">新闻资讯</a> / <span>${_message['title']}</span>
+            </div>
+            <article>
+                <h2>${_message['title']}</h2>
+                    <div class="contentTips"><span class="bdTime">${_message['ctime'].strftime('%Y-%m-%d')}</span><span class="bdSign wap"><b>标签：</b>${_message['labels']}</span></div>
+                <div class="content">${_message['content']}</div>
+            </article>
+            <div class="ewmFocus">
+                <img src="/static/images/cnicg_ewm.jpg" />
             </div>
         </div>
-        <div class="nwAside">
-            <div class="tt_h4">合作机构</div>
-            <div class="hzjg">
-                <ul>
-                    <li style="margin: 0 20px 16px 0;"><a href="http://www.ancc.org.cn/" target="_blank" title="中国物品编码中心"><img src="/images/gykj.jpg" alt="中国物品编码中心" /></a></li>
-                    <li><a href="http://www.etiri.com.cn/" target="_blank" title="工业和信息化部电子科技情报研究所"><img src="/images/nszf.jpg" alt="工业和信息化部电子科技情报研究所" /></a></li>
-                    <li style="margin: 0 20px 16px 0;"><a href="http://www.catr.cn/" target="_blank" title="中国信息通信研究院"><img src="/images/xkkj.jpg" alt="中国信息通信研究院" /></a></li>
-                    <li><a href="http://ftz.gzns.gov.cn/" target="_blank" title="广东自贸区南沙片区政府"><img src="/images/zgdx.jpg" alt="广东自贸区南沙片区政府" /></a></li>
-                </ul>
+        <div class="nwRight wap">
+            <div class="nwAside">
+                <div class="tt_h4">新闻推荐<a href="/news.html">more+</a></div>
+                <div class="ctdt">
+                    % for message in news:
+                        <div class="ctdt_group"><div class="ctdt_box">
+                            <a href="/newsdetail.html?id=${message['id']}"><img src="${cms}${message['image']}" alt="${message['title']}" width="130" height="78" /></a>
+                            <p><a href="/newsdetail.html?id=${message['id']}">${message['title']}</a></p>
+                        </div></div>
+                    % endfor
+                </div>
+            </div>
+            <div class="nwAside">
+                <div class="tt_h4">合作机构</div>
+                <div class="hzjg">
+                    <ul>
+                        <li style="margin: 0 20px 16px 0;"><a href="http://www.ancc.org.cn/" target="_blank" title="中国物品编码中心"><img src="/images/gykj.jpg" alt="中国物品编码中心" /></a></li>
+                        <li><a href="http://www.etiri.com.cn/" target="_blank" title="工业和信息化部电子科技情报研究所"><img src="/images/nszf.jpg" alt="工业和信息化部电子科技情报研究所" /></a></li>
+                        <li style="margin: 0 20px 16px 0;"><a href="http://www.catr.cn/" target="_blank" title="中国信息通信研究院"><img src="/images/xkkj.jpg" alt="中国信息通信研究院" /></a></li>
+                        <li><a href="http://ftz.gzns.gov.cn/" target="_blank" title="广东自贸区南沙片区政府"><img src="/images/zgdx.jpg" alt="广东自贸区南沙片区政府" /></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -45,8 +60,8 @@
 
 <%block name="jscode">
 <script>
+    mediaResize();
     $(function(){
-        mediaResize();
         $(window).resize(function(){
             mediaResize();
         });

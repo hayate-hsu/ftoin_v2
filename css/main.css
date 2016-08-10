@@ -45,7 +45,6 @@ input,textarea{ font-family: "microsoft yahei", Arial, Helvetica, sans-serif;}
 .kb_modal i{ display: block; text-indent: -9999px;}
 
 /************header***************/
-.wapHeader{display: none;}
 header{ height: 82px;}
 .logo{
     background: url("../images/logo.png") no-repeat;
@@ -1851,6 +1850,7 @@ article p{
     line-height: 34px;
     margin: 35px 0;
     text-align: justify;
+    font-size: 16px;
 }
 article p img{
     width: 628px;
@@ -4003,13 +4003,15 @@ span.bdzo{ background-position: -1000px -200px;}
 /*}*/
 /* 2016 new year all */
 
+.wapHeader, .ewmFocus{display: none;}
+
 @media screen and (max-width:1280px){
     .ouheader, .secnav, section, footer, .wrapper{
         width: 1280px;
     }
 }
 
-@media (max-device-width: 736px) {
+@media screen and (max-width: 736px) {
     body{width: 100%;}
     .wap{
         display: none;
@@ -4053,5 +4055,13 @@ span.bdzo{ background-position: -1000px -200px;}
     }
     article p img{
         width: 100%;
+    }
+    .ewmFocus{
+        display: block;
+    }
+    .ewmFocus img{
+        width: 172px;
+        margin: 0 auto 20px;
+        display: block;
     }
 }

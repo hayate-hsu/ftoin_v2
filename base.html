@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="baidu-site-verification" content="8IgABMh3ki" />
     <!--<meta property="wb:webmaster" content="196ca99c76d3ffd2" />-->
-    <title>${self.attr.title}国家物联网标识管理公共服务平台—提供物联网统一入口、项目孵化—NIOT</title>
+    <title>${self.attr.title} 国家物联网标识管理公共服务平台—提供物联网统一入口、项目孵化—NIOT</title>
     <meta name="keywords" content="${self.attr.keywords}">
     <meta name="description" content="${self.attr.des}">
     <link rel="stylesheet" href="/css/main.min.css" />
@@ -47,11 +47,7 @@
             </ul>
         </nav>
     </div>
-    <div class="wapHeader">
-        <a href="/">
-            <img src="/images/cnicg_logo.png" />
-        </a>
-    </div>
+    <%block name="wapHeader"></%block>
 
     ${self.body()}
 
@@ -130,7 +126,7 @@
     </aside>
 
     <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/main.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
     <%block name="jscode"></%block>
 </body>
 </html>

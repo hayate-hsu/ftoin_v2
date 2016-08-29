@@ -16,6 +16,7 @@
 	if(tHref.indexOf("news.html")>0){$("header .a-news").addClass("on");}
 	if(tHref.indexOf("aboutus.html")>0){$("header .a-aboutus").addClass("on");}
 	if(tHref.indexOf("jobs.html")>0){$("header .a-jobs").addClass("on");}
+	if(tHref.indexOf("cooper.html")>0){$("header .a-cooper").addClass("on");}
 	if(tHref.indexOf("cloud.html")>0){$(".secnav .a-cloud").addClass("on");}
 	if(tHref.indexOf("zncs.html")>0){$(".secnav .a-zncs").addClass("on");}
 	if(tHref.indexOf("kjyj.html")>0){$(".secnav .a-kjyj").addClass("on");}

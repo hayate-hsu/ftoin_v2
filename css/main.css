@@ -19,7 +19,7 @@ a{
 li{ list-style: none;}
 h1,h2,h3,h4,h5,h6{ font-weight: normal;}
 img{ border: none;}
-header, .secnav ul, .layer_wrapper, .fs_wrapper, .nw_wrapper, .jobs_wrapper, .ab_wrapper, .faily, .gz_wrapper, .kj_wrapper, .zmq_wrapper{
+header, .secnav ul, .layer_wrapper, .fs_wrapper, .nw_wrapper, .jobs_wrapper, .ab_wrapper, .faily, .gz_wrapper, .kj_wrapper, .zmq_wrapper, .cooper_wrapper{
     width: 1170px;
     margin: 0 auto;
 }
@@ -3584,6 +3584,68 @@ span.bdzo{ background-position: -1000px -200px;}
     background: url("../images/zmq03.jpg") top center no-repeat;
     height: 504px;
 }
+
+/*================ 2016-08-26 =====================*/
+/*================ 科技成果 =====================*/
+.cooper_banner{
+    background: url("../images/cooper001.jpg") top center no-repeat;
+    height: 376px;
+}
+.cooper_wrapper .header{
+    padding: 60px 0 26px;
+}
+.cooper_wrapper .header h2{
+    font-size: 26px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.cooper_wrapper .header div{
+    color: #868686;
+    font-size: 18px;
+}
+.cooper_wrapper .header span{
+    width: 100px;
+    height: 4px;
+    background: #0a80d6;
+    display: block;
+    margin-top: 10px;
+}
+.cooper01{
+    background: url("../images/cooper01.jpg") top center no-repeat;
+    height: 359px;
+}
+.cooper_wrapper ul li{
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 18px;
+}
+.cooper_wrapper ul li:nth-child(5){
+    margin-right: 0;
+}
+.cooper01 ul li img{
+    display: block;
+    width: 220px;
+    height: 120px;
+}
+.cooper02{
+    background: #f0f0f0;
+    height: 526px;
+}
+.cooper02 ul li img{
+    display: block;
+    width: 220px;
+    height: 136px;
+}
+.cooper03{
+    background: #fff;
+    height: 360px;
+}
+.cooper03 ul li img{
+    display: block;
+    width: 220px;
+    height: 120px;
+}
+
 /*************that's all**************/
 
 /* 2016 new year */
@@ -4011,7 +4073,7 @@ span.bdzo{ background-position: -1000px -200px;}
     }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-device-width: 736px) {
     body{width: 100%;}
     .wap{
         display: none;

@@ -9,10 +9,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="baidu-site-verification" content="8IgABMh3ki" />
     <!--<meta property="wb:webmaster" content="196ca99c76d3ffd2" />-->
-    <title><%block name="title"></%block>${self.attr.title} 国家物联网标识管理公共服务平台—提供物联网统一入口、项目孵化—CNICG</title>
+    <title><%block name="title" />${self.attr.title} 国家物联网标识管理公共服务平台—提供物联网统一入口、项目孵化—CNICG</title>
     <meta name="keywords" content="${self.attr.keywords}">
     <meta name="description" content="${self.attr.des}">
-    <link rel="stylesheet" href="/js/bootstrap/css/bootstrap.min.css" />
+    <%block name="cssCode" />
     <link rel="stylesheet" href="/css/main.min.css" />
 </head>
 
@@ -21,39 +21,47 @@
         <header>
             <a href="/index.html" class="logo"><h1>广州中国科学院计算机网络信息中心</h1></a>
             <nav class="fstnav">
-                <ul>
-                    <li><a class="a-aboutus" href="/aboutus.html" rel="nofollow">了解广州中心</a></li>
-                    <li><span>|</span></li>
-                    <li><a class="a-news" href="/news.html">行业热点</a></li>
-                    <li><span>|</span></li>
-                    <li><a class="dis" href="javascript:;">应用产品</a></li>   <!--dis 没有跳转-->
-                    <li><span>|</span></li>
-                    <li><a class="dis" href="javascript:;">解决方案&服务</a></li>
-                    <li><span>|</span></li>
-                    <li><a class="a-cooper" href="/cooper.html">合作伙伴</a></li>
-                    <li><span>|</span></li>
-                    <li><a class="a-jobs" href="/jobs.html">人才招聘</a></li>
-                </ul>
+                <!--<ul>-->
+                    <!--<li><a class="a-aboutus" href="/aboutus.html" rel="nofollow">了解广州中心</a></li>-->
+                    <!--<li><span>|</span></li>-->
+                    <!--<li><a class="a-news" href="/news.html">行业热点</a></li>-->
+                    <!--<li><span>|</span></li>-->
+                    <!--<li><a class="dis" href="javascript:;">应用产品</a></li>   &lt;!&ndash;dis 没有跳转&ndash;&gt;-->
+                    <!--<li><span>|</span></li>-->
+                    <!--<li><a class="dis" href="javascript:;">解决方案&服务</a></li>-->
+                    <!--<li><span>|</span></li>-->
+                    <!--<li><a class="a-cooper" href="/cooper.html">合作伙伴</a></li>-->
+                    <!--<li><span>|</span></li>-->
+                    <!--<li><a class="a-jobs" href="/jobs.html">人才招聘</a></li>-->
+                <!--</ul>-->
             </nav>
         </header>
         <nav class="secnav">
             <ul>
-                <li><a class="a-bsss alok" href="https://reg.cniotroot.cn/">标识注册查询</a></li>
-                <li><a class="a-cloud alok" href="/cloud.html">云服务</a></li>
-                <li><a class="a-zncs alok" href="/zncs.html">应用示范</a></li>
-                <li><a class="a-kjyj alok" href="/kjyj.html">科技研究</a></li>
-                <li><a class="a-gzfw alok" href="/gzfw.html" rel="nofollow">公共服务</a></li>
-                <li><a class="a-zckj alok" href="/zckj.html">众创空间</a></li>
-                <li><a class="a-zmq alok" href="/zmq.html">自贸区信息中心</a></li>
+                <li><a class="a-news alok" href="/news.html">了解广州中心</a></li>
+                <li><a class="a-zncs alno" href="javascript:;">行业热点</a></li>
+                <li>
+                    <a class="a-kjyj alok" href="javascript:;">应用产品</a>
+                    <dl>
+                        <dd><a href="https://iot.cniotroot.cn/" target="_blank"><span>标识平台</span></a></dd>
+                        <dd><a href="http://mbd.cniotroot.cn/" target="_blank"><span>壁咚</span></a></dd>
+                        <dd><a href="http://www.saomashou.com/" target="_blank"><span>扫码兽</span></a></dd>
+                        <dd><a href="http://wnl.bidongwifi.com:9899/app.html" target="_blank"><span>南沙通</span></a></dd>
+                        <dd><a href="http://www.mosign.cn/#/" target="_blank"><span>魔饰</span></a></dd>
+                    </dl>
+                </li>
+                <li><a class="a-gzfw alno" href="javascript:;">解决方案&服务</a></li>
+                <li><a class="a-cooper alok" href="/cooper.html">合作伙伴</a></li>
+                <li><a class="a-jobs alok" href="/jobs.html">人才招聘</a></li>
             </ul>
         </nav>
     </div>
-    <%block name="wapHeader"></%block>
+    <%block name="wapHeader" />
 
     ${self.body()}
 
     <!--footer-->
-    <%block name="wapFooter"></%block>
+    <%block name="wapFooter" />
     <footer class="${self.attr.wap}">
         <div class="friendlink">
             <div class="flinkbox">
@@ -129,7 +137,7 @@
 
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/main.min.js"></script>
-    <%block name="jscode"></%block>
+    <%block name="jscode" />
 </body>
 </html>
 

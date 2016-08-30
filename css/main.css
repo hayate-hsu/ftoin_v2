@@ -59,6 +59,9 @@ header{ height: 82px;}
     float: right;
     margin-top: 15px;
     cursor: default;
+    background: url("../images/cuture.gif") no-repeat;
+    width: 460px;
+    height: 56px;
 }
 .fstnav li{
     float: left;
@@ -96,41 +99,65 @@ header{ height: 82px;}
 .secnav ul{ overflow: hidden;}
 .secnav li{
     float: left;
-    width: 167px;
+    width: 195px;  /*167*/
     text-align: center;
 }
-.secnav li a{
+.secnav li .alok{
     display: block;
     height: 60px;
     line-height: 60px;
     font-size: 18px;
     color: #333;
-    background: url("../images/nav_arrow.png") 74px 59px no-repeat;
+    background: url("../images/nav_arrow.png") 88px 59px no-repeat;
     transition: all 0.3s ease;
     text-decoration: none;
-    /*margin-right: 25px;*/
 }
-.secnav li .alok:hover{
-    background: url("../images/nav_arrow.png") 74px 49px no-repeat;
+.secnav li .alok.act{
+    background: url("../images/nav_arrow.png") 88px 49px no-repeat;
     color: #00ade7;
  }
-.secnav li a.on{
+.secnav li .alok.on{
     font-size: 22px;
     color: #00ade7;
-    background: url("../images/nav_arrow.png") 74px 49px no-repeat;
+    background: url("../images/nav_arrow.png") 88px 49px no-repeat;
 }
-/*.secnav li a i{*/
-    /*background: url(../images/sprite.png) no-repeat;*/
-    /*width: 50px;*/
-    /*height: 50px;*/
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
-    /*margin-right: 10px;*/
-    /*margin-top: -2px;*/
-/*}*/
 .secnav li .alno{
     opacity: 0.5;
     cursor: default;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+.secnav li dl{
+    background: #00ade7;
+    background: rgba(0, 173, 231, 0.9);
+    display: none;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.secnav li dl a{
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    text-indent: 60px;
+    color: #c4e5f0;
+}
+.secnav li dl a:hover{
+    color: #fff;
+}
+.secnav li dl a span{
+    transition: all 0.3s ease-out;
+}
+.secnav li dl a:hover span{
+    margin-left: 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #fff;
 }
 
 /************banner***************/
@@ -244,7 +271,7 @@ header{ height: 82px;}
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-	text-indent: 0px;
+	text-indent: 0;
 }
 .mcNotice p a{  color: #2787d0;}
 .mcNotice p a:hover{ text-decoration: underline;}
@@ -412,7 +439,7 @@ header{ height: 82px;}
 }
 .bz_ad li{
 	float: left;
-    font-size: 0px;    
+    font-size: 0;
 }
 .bz_ad img{
     border: 1px solid #d2d2d2;
@@ -420,7 +447,19 @@ header{ height: 82px;}
     height: 74px;
 }
 .bzad{ float:left; }
-.bzad a.jmit{ background:url(../images/jmit.png) 60px center no-repeat; float:left; height:48px; width:369px; border:1px solid #c6cac6; font-size:14px; color:#333; text-indent: 150px; text-align: left; line-height:48px; overflow:hidden; }
+.bzad a.jmit{
+    background:url(../images/iot.png) 68px center no-repeat;
+    float:left;
+    height:48px;
+    width:369px;
+    border:1px solid #c6cac6;
+    font-size:14px; color:#333;
+    text-indent: 150px;
+    text-align: left;
+    line-height:48px;
+    overflow:hidden;
+}
+.bzad a.jmit:hover{text-decoration: underline;}
 .bz_reRoll{
     overflow: hidden;
     width: 556px;

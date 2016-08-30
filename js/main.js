@@ -12,17 +12,25 @@
 	//header导航标记
 	var tHref = window.location.href;
 	$("header a").removeClass("on");
-	if(tHref.indexOf("index.html")>0){$("header .a-index").addClass("on");}
-	if(tHref.indexOf("news.html")>0){$("header .a-news").addClass("on");}
-	if(tHref.indexOf("aboutus.html")>0){$("header .a-aboutus").addClass("on");}
-	if(tHref.indexOf("jobs.html")>0){$("header .a-jobs").addClass("on");}
-	if(tHref.indexOf("cooper.html")>0){$("header .a-cooper").addClass("on");}
-	if(tHref.indexOf("cloud.html")>0){$(".secnav .a-cloud").addClass("on");}
+	//if(tHref.indexOf("index.html")>0){$("header .a-index").addClass("on");}
+	//if(tHref.indexOf("news.html")>0){$("header .a-news").addClass("on");}
+	//if(tHref.indexOf("aboutus.html")>0){$("header .a-aboutus").addClass("on");}
+	//if(tHref.indexOf("jobs.html")>0){$("header .a-jobs").addClass("on");}
+	//if(tHref.indexOf("cooper.html")>0){$("header .a-cooper").addClass("on");}
+	if(tHref.indexOf("news.html")>0){$(".secnav .a-news").addClass("on");}
 	if(tHref.indexOf("zncs.html")>0){$(".secnav .a-zncs").addClass("on");}
 	if(tHref.indexOf("kjyj.html")>0){$(".secnav .a-kjyj").addClass("on");}
 	if(tHref.indexOf("gzfw.html")>0){$(".secnav .a-gzfw").addClass("on");}
-	if(tHref.indexOf("zckj.html")>0){$(".secnav .a-zckj").addClass("on");}
-	if(tHref.indexOf("zmq.html")>0){$(".secnav .a-zmq").addClass("on");}
+	if(tHref.indexOf("cooper.html")>0){$(".secnav .a-cooper").addClass("on");}
+	if(tHref.indexOf("jobs.html")>0){$(".secnav .a-jobs").addClass("on");}
+
+    $('.secnav li').hover(function(){
+        $(this).find('.alok').addClass('act');
+        $(this).find('dl').fadeIn();
+    }, function(){
+        $(this).find('.alok').removeClass('act');
+        $(this).find('dl').fadeOut();
+    });
 
     //banner
     var int = setInterval("$.hotImg()", 6000);
@@ -472,11 +480,11 @@
         }
     });
 
-    $('.bzad a:eq(0)').hover(function(){
-        $('.bz_info').fadeIn();
-    },function(){
-        $('.bz_info').fadeOut();
-    });
+    //$('.bzad a:eq(0)').hover(function(){
+    //    $('.bz_info').fadeIn();
+    //},function(){
+    //    $('.bz_info').fadeOut();
+    //});
 
     //首页-标识查询
     $('.bz_sbox button').click(function(){

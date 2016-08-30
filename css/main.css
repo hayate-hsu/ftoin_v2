@@ -448,13 +448,13 @@ header{ height: 82px;}
 }
 .bzad{ float:left; }
 .bzad a.jmit{
-    background:url(../images/iot.png) 68px center no-repeat;
+    background:url(../images/iot.png) 150px center no-repeat;
     float:left;
     height:48px;
-    width:369px;
+    width:476px;
     border:1px solid #c6cac6;
     font-size:14px; color:#333;
-    text-indent: 150px;
+    text-indent: 238px;
     text-align: left;
     line-height:48px;
     overflow:hidden;

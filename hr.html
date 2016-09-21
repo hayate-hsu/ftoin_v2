@@ -237,7 +237,7 @@
         <p><*= this.cont.name *></p>
         <p><*= this.adress *></p>
         <p>发布时间：<*= this.cont.ctime *></p>
-        <a class="btn" href="mailto:fresh@cnicg.cn">立即申请</a>
+        <a class="btn" href="mailto:<*= this.cont.email*>">立即申请</a>
         <div class="cont-box">
             <p class="head">岗位职责：</p>
             <p class="cont"><*= this.cont.duty.replace(/\n/g,'<br />') *></p>
@@ -248,7 +248,7 @@
         </div>
         <div class="cont-box">
             <p class="head">简历投递</p>
-            <p class="cont">fresh@cnicg.cn</p>
+            <p class="cont"><*= this.cont.email*></p>
         </div>
 
     </div>

@@ -3,7 +3,7 @@
     window.cmsUrl = 'https://cms.cniotroot.cn';//'http://cms.bidongwifi.com/';
     if(checkBrower()){cmsUrl = 'https://www.cniotroot.cn/cms';}
 	
-	var urlList = 'message',
+	var urlList = '/message',
 		msgGroups = '12698';
 
 	//加载新闻列表

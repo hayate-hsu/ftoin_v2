@@ -1,7 +1,7 @@
 /* Created by fxh on 2015/12/31 */
 ;$(function(){
-    window.cmsUrl = 'https://cms.cniotroot.cn/';//'http://cms.bidongwifi.com/';
-    if(checkBrower()){cmsUrl = 'https://www.cniotroot.cn/cms/';}
+    window.cmsUrl = 'https://cms.cniotroot.cn';//'http://cms.bidongwifi.com/';
+    if(checkBrower()){cmsUrl = 'https://www.cniotroot.cn/cms';}
 	
 	var urlList = 'message',
 		msgGroups = '12698';

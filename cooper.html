@@ -1,57 +1,154 @@
-## 合作机构
 <%inherit file="base.html" />
+<%block name="cssCode">
+<link rel="stylesheet" href="css/partner.css">
+</%block>
+<section class="img-box">
+    <!--<div class="kj_wrapper" style="display: none"><h3>CNICG</h3></div>-->
+    <div><img src="img/partner_top.jpg" alt=""></div>
+</section>
+<section class="partner_business odd_color" style="padding-top: 40px;">
+    <!--<div class="kj_wrapper" style="display: none"><h3>组织文化</h3></div>-->
+    <div class="moduls_01 ">
+        <div>
+            <h2>平台接入商家</h2>
+            <p>Platform Access Business</p>
+            <span></span>
+        </div>
+    </div>
+    <div class="moduls_02 ">
+        <div id="partner_map">
 
-<%!
-    title=u"合作机构";
-%>
+        </div>
+        <div class="map-right">
+            <div class="content">
+                <div class="cont-head"><span id="proviness_business">江苏省接入商家</span><span id="business_count"></span></div>
+                <ul class="cont-list" id="business">
 
-<section class="cooper_banner"></section>
-<section class="cooper01">
-    <div class="cooper_wrapper">
-        <div class="header">
-            <h2>合作代理商</h2>
-            <div>Cooperative Agent</div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="moduls_03" id="business_btn">
+        <button class="btn">商家申请接入</button>
+    </div>
+</section>
+<section class="partner_agents even_color" >
+    <div class="moduls_01 ">
+        <div>
+            <h2>平台代理商</h2>
+            <p>Platform Agents</p>
             <span></span>
         </div>
+    </div>
+    <div class="moduls_02">
+        <div>
+            <div class="img-box"><a href="http://www.jmars.com/" target="_blank"><img src="img/jm.jpg" alt=""></a></div>
+            <div class="cont">
+                <p class="cont-head">
+                    <span>捷玛计算机信息技术（上海）股份有限公司</span>
+                    <!--<span></span>-->
+                    <!--<span>服务领域化妆品</span>-->
+                </p>
+                <p class="cont-p">捷码公司是专注于商品流通企业软件开发、解决方案提供、系统集成及IT服务的外商独资高科技企业。自2000年以成立以来，为上海百联集团下属大型连锁零售、物流企业，为中集集团下属各类企业以及ZARA服装专卖等国内外知名企业相关的过千家商铺、供应商、仓库、物流配送中心进行了IT基础架构和集成、软件定制化开发、解决方案实施、全年365天24小时的IT服务。</p>
+            </div>
+        </div>
+        <div>
+            <div class="img-box"><a href="http://www.wwhqj.com/" target="_blank"><img src="img/dy.jpg" alt=""></a></div>
+            <div class="cont">
+                <p class="cont-head">
+                    <span>福建第一时间物联网科技投资有限公司</span>
+                    <!--<span></span>-->
+                    <!--<span>服务领域化妆品</span>-->
+                </p>
+                <p class="cont-p">第一时间公司是福建省知名的物联网技术服务与推广运营机构。专注于为客户定制化软件开发及解决方案的实施。物物地图是该公司2016年9月上线的一款移动消费APP。</p>
+            </div>
+        </div>
+    </div>
+    <div class="moduls_03">
+        <button class="btn">代理商申请接入</button>
+    </div>
+</section>
+<section class="partner_coop odd_color">
+    <div class="moduls_01 ">
+        <div>
+            <h2>合作伙伴</h2>
+            <p>Partners</p>
+            <span></span>
+        </div>
+    </div>
+    <div class="moduls_02">
         <ul>
-            <li><a href="javascript:;" title="福建第一时间合其家" target="_blank"><img src="/images/cooper_heqijia.jpg" alt="福建第一时间合其家" /></a></li>
-            <li><a href="http://www.jmars.com/" title="捷玛计算机信息技术（上海）有限公司" target="_blank"><img src="/images/cooper_jmit.jpg" alt="捷玛计算机信息技术（上海）有限公司" /></a></li>
+            <li>
+                <a href="http://www.goviot.cn/" target="_blank">
+                    <img src="img/cooper_bszsyjy.jpg" alt="">
+                </a>
+            </li><li>
+            <a href="http://www.gzcnbst.com/" target="_blank">
+                <img src="img/cooper_cn.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.cqupt.edu.cn/cqupt/index.shtml" target="_blank">
+                <img src="img/cooper_cqyd.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.fudan.edu.cn/2016/index.html" target="_blank">
+                <img src="img/cooper_fudan.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.ancc.org.cn/" target="_blank">
+                <img src="img/cooper_gs1.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.miit.gov.cn/" target="_blank">
+                <img src="img/cooper_gyhxxhb.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.kerlink.com/en/" target="_blank">
+                <img src="img/cooper_kerlink.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://iot.semtech.com/" target="_blank">
+                <img src="img/cooper_lora.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://orbi.ulg.ac.be/handle/2268/161806" target="_blank">
+                <img src="img/cooper_orbiwise.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.189.cn/"    target="_blank">
+                <img src="img/cooper_telecom.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.chinaunicom.com.cn/" target="_blank">
+                <img src="img/cooper_unicom.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.catr.cn/" target="_blank">
+                <img src="img/cooper_xxtxyjy.jpg" alt=""></a>
+        </li><li>
+            <a href="http://www.gzns.gov.cn/" target="_blank">
+                <img src="img/cooper_zmq.jpg" alt="">
+            </a>
+        </li><li>
+            <a href="http://www.sysu.edu.cn/2012/cn/index.htm" target="_blank">
+                <img src="img/cooper_zsdx.jpg" alt="">
+            </a>
+        </li>
         </ul>
     </div>
 </section>
-<section class="cooper02">
-    <div class="cooper_wrapper">
-        <div class="header">
-            <h2>合作机构</h2>
-            <div>Cooperative Institution</div>
-            <span></span>
+<div class="mask" id="mask_01">
+    <div class="mask-box">
+        <div class="mask-cont">
+            <img src="img/card.jpg" alt="">
+            <!--<p>联系人：李经理</p>-->
+            <!--<p>联系方式：135-8037-2651</p>-->
         </div>
-        <ul>
-            <li><a href="http://www.miit.gov.cn/" title="工信部电子一所" target="_blank"><img src="/images/cooper_gyhxxhb.jpg" alt="工信部电子一所" /></a></li>
-            <li><a href="http://www.catr.cn/" title="中国信息通信研究院" target="_blank"><img src="/images/cooper_xxtxyjy.jpg" alt="中国信息通信研究院" /></a></li>
-            <li><a href="http://www.goviot.cn/" title="北京中科物联网标识研究院" target="_blank"><img src="/images/cooper_bszsyjy.jpg" alt="北京中科物联网标识研究院" /></a></li>
-            <li><a href="http://www.ancc.org.cn/" title="中国物品编码中心" target="_blank"><img src="/images/cooper_gs1.jpg" alt="中国物品编码中心" /></a></li>
-            <li><a href="http://www.gzns.gov.cn/" title="广州市南沙区政府" target="_blank"><img src="/images/cooper_zmq.jpg" alt="广州市南沙区政府" /></a></li>
-            <li><a href="http://www.fudan.edu.cn/2016/index.html" title="复旦大学" target="_blank"><img src="/images/cooper_fudan.jpg" alt="复旦大学" /></a></li>
-            <li><a href="http://www.cqupt.edu.cn/cqupt/index.shtml" title="重庆邮电大学" target="_blank"><img src="/images/cooper_cqyd.jpg" alt="重庆邮电大学" /></a></li>
-            <li><a href="http://www.sysu.edu.cn/2012/cn/index.htm" title="中山大学" target="_blank"><img src="/images/cooper_zsdx.jpg" alt="中山大学" /></a></li>
-            <li><a href="http://iot.semtech.com/" title="LORA联盟" target="_blank"><img src="/images/cooper_lora.jpg" alt="LORA联盟" /></a></li>
-        </ul>
-    </div>
-</section>
-<section class="cooper03">
-    <div class="cooper_wrapper">
-        <div class="header">
-            <h2>合作企业</h2>
-            <div>Cooperative Enterprise</div>
-            <span></span>
+        <div class="mask-btn">
+            <button class="btn dow" >下载名片</button><button class="btn cancel" >取消</button>
         </div>
-        <ul>
-            <li><a href="http://www.kerlink.com/en/" title="法国Kerlink公司" target="_blank"><img src="/images/cooper_kerlink.jpg" alt="法国Kerlink公司" /></a></li>
-            <li><a href="http://orbi.ulg.ac.be/handle/2268/161806" title="瑞士OrbiWise公司" target="_blank"><img src="/images/cooper_orbiwise.jpg" alt="瑞士OrbiWise公司" /></a></li>
-            <li><a href="http://www.chinaunicom.com.cn/" title="中国联通" target="_blank"><img src="/images/cooper_unicom.jpg" alt="中国联通" /></a></li>
-            <li><a href="http://www.189.cn/" title="中国电信" target="_blank"><img src="/images/cooper_telecom.jpg" alt="中国电信" /></a></li>
-            <li><a href="http://www.gzcnbst.com/" title="广州成诺生物科技有限公司" target="_blank"><img src="/images/cooper_cn.jpg" alt="广州成诺生物科技有限公司" /></a></li>
-        </ul>
     </div>
-</section>
+</div>
+<%block name="jscode">
+<script src="js/partner.all.js?v1.0"></script>
+</%block>

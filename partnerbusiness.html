@@ -1,0 +1,50 @@
+<%inherit file="base.html" />
+<%block name="cssCode">
+<link rel="stylesheet" href="css/partnerbusiness.css">
+</%block>
+<section class="partner_business odd_color" style="padding-top: 40px;">
+    <p class="headers conts"><span><a class="a_link" href="/" target="_self">首页</a>></span><span><a
+            class="a_link" href="/cooper.html" target="_self">合作伙伴</a>></span><span style="color: #7d7d7d;">查看更多</span></p>
+    <div class="selected conts">
+        <div class="select">
+            <span>省份：</span>
+            <select name="" id="province">
+            </select>
+        </div>
+        <div class="select">
+            <span>行业：</span>
+            <select name="" id="industry">
+            </select>
+        </div>
+        <div class=" select">
+            <button class="btn" id="search">查询</button>
+        </div>
+    </div>
+    <div class="moduls_02 conts ">
+        <div class="content">
+            <div class="cont-head"><span id="proviness_business"></span><span id="business_count"
+                                                                              style="display: block;"></span>
+            </div>
+            <ul class="cont-list" id="business">
+
+            </ul>
+            <div class="pagenation-box" id="pagenation"><ul id="pagetion"></ul></div>
+        </div>
+    </div>
+</section>
+<div class="mask" id="mask_01">
+    <div class="mask-box">
+        <div class="mask-cont">
+            <img src="img/card.jpg" alt="">
+            <!--<p>联系人：李经理</p>-->
+            <!--<p>联系方式：135-8037-2651</p>-->
+        </div>
+        <div class="mask-btn">
+            <button class="btn dow" >下载名片</button>
+            <button class="btn cancel" >取消</button>
+        </div>
+    </div>
+</div>
+<%block name="jscode">
+<script src="js/business.all.js?v1.0"></script>
+</%block>

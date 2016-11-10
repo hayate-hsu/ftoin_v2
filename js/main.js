@@ -8,6 +8,9 @@
         window.location.href = '/news.html';
         //return history.back();
     });
+
+    // 格式化新闻
+    $('article img').removeAttr('style');
 	
 	//header导航标记
 	var tHref = window.location.href;

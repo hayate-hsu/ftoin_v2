@@ -4162,7 +4162,7 @@ span.bdzo{ background-position: -1000px -200px;}
         margin: 10px 0;
     }
     article p img{
-        width: 100%;
+        max-width: 100%;
     }
     article .bdTime{
         font-size: 12px;

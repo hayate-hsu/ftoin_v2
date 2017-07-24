@@ -49,7 +49,7 @@
 			url: cmsUrl+urlList,
 			data: {
 				groups: msgGroups,
-				mask: 2,
+				mask: 0,
 				per: 20,
 				page: page,
 				gmtype: gmtype

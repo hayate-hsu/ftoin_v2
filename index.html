@@ -92,7 +92,7 @@
         <div class="fallbox">
             <ul>
                 % for index, message in enumerate(news):
-                    <li class="fb0${index+1}"><img id="img${index+1}" src="${cms}${message['image']}" /><a target="_blank" href="/newsdetail.html?id=${message['id']}"><span class="scTime">${message['ctime'].strftime('%Y-%m-%d')}</span><div><h3>${message['title']}</h3><p>${message['subtitle'][0:28]}</p></div></a></li>
+                    <li class="fb0${index+1}"><img id="img${index+1}" src="${cms(message['image'])}" /><a target="_blank" href="/newsdetail.html?id=${message['id']}"><span class="scTime">${message['ctime'].strftime('%Y-%m-%d')}</span><div><h3>${message['title']}</h3><p>${message['subtitle'][0:28]}</p></div></a></li>
                 % endfor
             </ul>
         </div>

@@ -36,7 +36,7 @@
                 <div class="ctdt">
                     % for message in news:
                         <div class="ctdt_group"><div class="ctdt_box">
-                            <a href="/newsdetail.html?id=${message['id']}"><img src="${cms}${message['image']}" alt="${message['title']}" width="130" height="78" /></a>
+                            <a href="/newsdetail.html?id=${message['id']}"><img src="${cms(message['image'])}" alt="${message['title']}" width="130" height="78" /></a>
                             <p><a href="/newsdetail.html?id=${message['id']}">${message['title']}</a></p>
                         </div></div>
                     % endfor

@@ -15,12 +15,12 @@
                 % for index,message in enumerate(news):
                     % if not index:
                         <div class="nwBanner">
-                            <a href="/newsdetail.html?id=${message['id']}"><img src="${cms}${message['image']}" /></a>
+                            <a href="/newsdetail.html?id=${message['id']}"><img src="${cms(message['image'])}" /></a>
                             <span>${message['title']}</span>
                         </div>
                     % else:
                         <div class="newsGroup">
-                            <a href="/newsdetail.html?id=${message['id']}"><img src="${cms}${message['image']}" width="260" height="156" /></a>
+                            <a href="/newsdetail.html?id=${message['id']}"><img src="${cms(message['image'])}" width="260" height="156" /></a>
                             <div class="newsbox">
                                 <h3><a href="/newsdetail.html?id=${message['id']}">${message['title']}</a></h3>
                                 <p>${message['subtitle'][0:70]}</p>

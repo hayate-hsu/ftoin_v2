@@ -6,7 +6,7 @@
 function getPublicity() {
     $.ajax({
         async:false,
-        url:'/cms/message/?groups=12698,29859&mask=2&gmtype=77',
+        url:'/cms/message/?groups=12698,29859&gmtype=77',
         success:function (data) {
             console.log(data);
             if(data.Code==200 && data.messages.length>0){
